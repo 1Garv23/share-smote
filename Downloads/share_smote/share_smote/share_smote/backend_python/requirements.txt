@@ -1,0 +1,16 @@
+fastapi
+uvicorn[standard]
+pillow
+scikit-image
+scikit-learn
+imbalanced-learn
+python-multipart
+pydantic
+pydantic-settings
+pathspec
+filelock
+python-jose[cryptography]
+passlib[bcrypt]
+slowapi
+pytest
+requests

@@ -1,0 +1,164 @@
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.login-container {
+  padding: 40px 20px;
+  width: 100%;
+  background: white;
+  min-height: 100vh;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.title-page {
+  text-align: center;
+  margin: 0 auto 60px auto;
+  padding: 40px 20px;
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+}
+
+.course-code {
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333;
+  margin: 0 0 20px 0;
+  text-transform: uppercase;
+}
+
+.course-project {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 30px 0;
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+.title-divider {
+  width: 80px;
+  height: 2px;
+  background: #ccc;
+  margin: 30px auto;
+}
+
+.carried-out {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+  margin: 30px 0 20px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.student-name {
+  font-size: 13px;
+  color: #444;
+  margin: 12px 0;
+  font-weight: 500;
+}
+
+
+.login-form-container {
+  background: #f8f9fa;
+  padding: 30px 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.login-form-container h2 {
+  margin: 0 0 25px 0;
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.login-form-container form div {
+  margin-bottom: 15px;
+}
+
+.login-form-container input {
+  width: 100%;
+  padding: 12px 14px !important;
+  border: 1px solid #ddd !important;
+  border-radius: 6px;
+  font-size: 14px;
+  background: white;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.login-form-container input:focus {
+  outline: none;
+  border-color: #007bff !important;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.login-form-container input::placeholder {
+  color: #999;
+}
+
+.login-form-container button[type="submit"] {
+  width: 100%;
+  padding: 12px !important;
+  background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+  color: white;
+  border: none !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 10px;
+}
+
+.login-form-container button[type="submit"]:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.3);
+}
+
+.login-form-container p {
+  text-align: center;
+  margin: 20px 0 0 0;
+  color: #555;
+  font-size: 14px;
+}
+
+.login-form-container p button {
+  background: none !important;
+  border: none !important;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0 !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.login-form-container p button:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.login-form-container p button:focus {
+  outline: none;
+}

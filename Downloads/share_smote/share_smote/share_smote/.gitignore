@@ -1,0 +1,22 @@
+231IT023_GarvMandloi_Outputs
+README.txt.txt
+test_javascript_backend
+
+# Node dependencies
+node_modules/
+**/node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python virtual environments
+venv/
+.venv/
+**/venv/
+**/.venv/
+backend_python/venv/
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*.pyc

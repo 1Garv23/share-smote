@@ -1,0 +1,917 @@
+[32mINFO[0m:     2025-10-14 15:30:46 uvicorn.error Started server process [[36m87397[0m]
+[32mINFO[0m:     2025-10-14 15:30:46 uvicorn.error Waiting for application startup.
+[32mINFO[0m:     2025-10-14 15:30:46 uvicorn.error Application startup complete.
+[32mINFO[0m:     2025-10-14 15:30:46 uvicorn.error Uvicorn running on [1mhttp://0.0.0.0:8080[0m (Press CTRL+C to quit)
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "GET /health HTTP/1.1" 200
+2025-10-14 15:30:48,784 WARNING app Invalid API key attempt detected
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57722 - "GET /assets/ HTTP/1.1" 403
+2025-10-14 15:30:48,786 WARNING app Invalid API key attempt detected
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57726 - "GET /assets/ HTTP/1.1" 403
+2025-10-14 15:30:48,811 INFO assets.registry Added asset fc5bbe99-bd19-4d0a-8057-b970af6efc4e: image_0.png (label: cat)
+2025-10-14 15:30:48,813 INFO assets.registry Added asset 10c2c599-6bdb-4754-961c-fc1143d0ca33: image_1.png (label: cat)
+2025-10-14 15:30:48,816 INFO assets.registry Added asset 22b7d064-cd72-4077-9122-47e846d60b57: image_2.png (label: cat)
+2025-10-14 15:30:48,819 INFO assets.registry Added asset e42d6fcb-240a-4e45-b1de-666be04fdee1: image_0.png (label: dog)
+2025-10-14 15:30:48,822 INFO assets.registry Added asset 2017c5dd-38be-4396-8bff-3cf8805eda5e: image_1.png (label: dog)
+2025-10-14 15:30:48,824 INFO assets.registry Added asset 68007f68-d85c-4a4b-8847-b7047c930b57: image_2.png (label: dog)
+2025-10-14 15:30:48,824 INFO upload.service Ingested 6 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:30:48,829 INFO assets.registry Deleted asset fc5bbe99-bd19-4d0a-8057-b970af6efc4e
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/fc5bbe99-bd19-4d0a-8057-b970af6efc4e HTTP/1.1" 200
+2025-10-14 15:30:48,831 INFO assets.registry Deleted asset 10c2c599-6bdb-4754-961c-fc1143d0ca33
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/10c2c599-6bdb-4754-961c-fc1143d0ca33 HTTP/1.1" 200
+2025-10-14 15:30:48,834 INFO assets.registry Deleted asset 22b7d064-cd72-4077-9122-47e846d60b57
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/22b7d064-cd72-4077-9122-47e846d60b57 HTTP/1.1" 200
+2025-10-14 15:30:48,837 INFO assets.registry Deleted asset e42d6fcb-240a-4e45-b1de-666be04fdee1
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e42d6fcb-240a-4e45-b1de-666be04fdee1 HTTP/1.1" 200
+2025-10-14 15:30:48,841 INFO assets.registry Deleted asset 2017c5dd-38be-4396-8bff-3cf8805eda5e
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/2017c5dd-38be-4396-8bff-3cf8805eda5e HTTP/1.1" 200
+2025-10-14 15:30:48,844 INFO assets.registry Deleted asset 68007f68-d85c-4a4b-8847-b7047c930b57
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/68007f68-d85c-4a4b-8847-b7047c930b57 HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 400
+2025-10-14 15:30:48,854 INFO assets.registry Added asset 6a7d4f06-525f-4a61-90d5-90b20db7e207: image_0.png (label: test_class)
+2025-10-14 15:30:48,857 INFO assets.registry Added asset b9199578-591f-419c-9c84-bc5eb9458a36: image_1.png (label: test_class)
+2025-10-14 15:30:48,857 INFO upload.service Ingested 2 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "GET /assets/ HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "GET /assets/6a7d4f06-525f-4a61-90d5-90b20db7e207 HTTP/1.1" 200
+2025-10-14 15:30:48,864 INFO assets.registry Deleted asset 6a7d4f06-525f-4a61-90d5-90b20db7e207
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/6a7d4f06-525f-4a61-90d5-90b20db7e207 HTTP/1.1" 200
+2025-10-14 15:30:48,867 INFO assets.registry Deleted asset b9199578-591f-419c-9c84-bc5eb9458a36
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b9199578-591f-419c-9c84-bc5eb9458a36 HTTP/1.1" 200
+2025-10-14 15:30:48,874 INFO assets.registry Added asset 45c6a545-5afb-427a-9549-907dc94c4d51: image_0.png (label: test)
+2025-10-14 15:30:48,874 INFO upload.service Ingested 1 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:30:48,877 INFO assets.registry Deleted asset 45c6a545-5afb-427a-9549-907dc94c4d51
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/45c6a545-5afb-427a-9549-907dc94c4d51 HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "GET /assets/45c6a545-5afb-427a-9549-907dc94c4d51 HTTP/1.1" 404
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "GET /params HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "POST /params HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "GET /params HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:48 uvicorn.access 127.0.0.1:57720 - "POST /params HTTP/1.1" 200
+2025-10-14 15:30:48,955 INFO assets.registry Added asset bb250b53-67fd-43ea-a506-7e29d0043c6f: image_0.png (label: majority_class)
+2025-10-14 15:30:48,957 INFO assets.registry Added asset 8fd6c5b4-5ba9-453e-8ab4-60ad3f156536: image_1.png (label: majority_class)
+2025-10-14 15:30:48,961 INFO assets.registry Added asset 0ac7fa11-3467-4eab-81ba-029bbc58650e: image_2.png (label: majority_class)
+2025-10-14 15:30:48,963 INFO assets.registry Added asset e3d941f1-7a5f-4c09-b178-b73ce72b71dc: image_3.png (label: majority_class)
+2025-10-14 15:30:48,966 INFO assets.registry Added asset 323001f1-37f5-45f2-8f6e-614f0c85436d: image_4.png (label: majority_class)
+2025-10-14 15:30:48,969 INFO assets.registry Added asset 2960d5b4-dcd2-416b-9db4-69d0962524b6: image_5.png (label: majority_class)
+2025-10-14 15:30:48,971 INFO assets.registry Added asset 37609f28-6339-46cf-baa5-e9b0da474b47: image_6.png (label: majority_class)
+2025-10-14 15:30:48,974 INFO assets.registry Added asset 0cd5f52a-b27a-495a-a24e-b977d31f0528: image_7.png (label: majority_class)
+2025-10-14 15:30:48,977 INFO assets.registry Added asset 9a609557-9c06-4315-85b9-20f894185fbd: image_8.png (label: majority_class)
+2025-10-14 15:30:48,979 INFO assets.registry Added asset 1c2525cd-b553-4d46-939c-164d2552c8e3: image_9.png (label: majority_class)
+2025-10-14 15:30:48,983 INFO assets.registry Added asset 20d9dc07-5c2c-415f-ad1d-c4ea279fa5b7: image_10.png (label: majority_class)
+2025-10-14 15:30:48,986 INFO assets.registry Added asset 55236f76-2b84-4bf6-9c7a-f3e12e45facc: image_11.png (label: majority_class)
+2025-10-14 15:30:48,989 INFO assets.registry Added asset f0b3c43f-ce89-496b-9c64-da92342e6344: image_12.png (label: majority_class)
+2025-10-14 15:30:48,992 INFO assets.registry Added asset bbc69897-ce77-4d8d-8b33-06ba42ede407: image_13.png (label: majority_class)
+2025-10-14 15:30:48,994 INFO assets.registry Added asset 83207f3f-8232-49e7-a951-a3dcee0ddaf4: image_14.png (label: majority_class)
+2025-10-14 15:30:48,998 INFO assets.registry Added asset 15039269-b1fe-422c-82d3-ca9e7519b00a: image_15.png (label: majority_class)
+2025-10-14 15:30:49,001 INFO assets.registry Added asset 73751c9c-7c36-45a1-828e-1a835bc687cb: image_16.png (label: majority_class)
+2025-10-14 15:30:49,004 INFO assets.registry Added asset 5c4406fa-2532-4c4d-8d9c-834256fc3180: image_17.png (label: majority_class)
+2025-10-14 15:30:49,007 INFO assets.registry Added asset 0569f9fd-f763-4a57-ac67-e80380e54e94: image_18.png (label: majority_class)
+2025-10-14 15:30:49,010 INFO assets.registry Added asset 59707f01-8cec-4a7a-912b-74a24fb783e5: image_19.png (label: majority_class)
+2025-10-14 15:30:49,013 INFO assets.registry Added asset b608e887-e906-4b2f-af62-f5b7c078b448: image_20.png (label: majority_class)
+2025-10-14 15:30:49,017 INFO assets.registry Added asset 907d874c-0153-46a4-b5c3-e5d52aa8c0b4: image_21.png (label: majority_class)
+2025-10-14 15:30:49,020 INFO assets.registry Added asset b8513d5c-7748-4416-83c9-e78ea0c4ead4: image_22.png (label: majority_class)
+2025-10-14 15:30:49,023 INFO assets.registry Added asset b5d7b2e9-2504-4415-b04a-704942a46bc7: image_23.png (label: majority_class)
+2025-10-14 15:30:49,027 INFO assets.registry Added asset 93bd2bb2-69ba-431f-924b-667ae057c05a: image_24.png (label: majority_class)
+2025-10-14 15:30:49,031 INFO assets.registry Added asset 1dd60b12-e877-411d-8e53-e8968fd0792c: image_25.png (label: majority_class)
+2025-10-14 15:30:49,034 INFO assets.registry Added asset 338f63db-d60a-406d-a9df-988ffbac80a3: image_26.png (label: majority_class)
+2025-10-14 15:30:49,037 INFO assets.registry Added asset 05f995a6-b7c7-4957-98bd-65053447237d: image_27.png (label: majority_class)
+2025-10-14 15:30:49,040 INFO assets.registry Added asset 3b62d81a-804e-4284-a057-feaf5b40d73e: image_28.png (label: majority_class)
+2025-10-14 15:30:49,043 INFO assets.registry Added asset 985a690f-eb07-4c67-bf3e-26f18b8611a9: image_29.png (label: majority_class)
+2025-10-14 15:30:49,047 INFO assets.registry Added asset 625cc1b2-37df-4eac-8f90-37cd39aed2ac: image_30.png (label: majority_class)
+2025-10-14 15:30:49,051 INFO assets.registry Added asset 535e072c-ba5a-4534-b87f-79ab2edece4f: image_31.png (label: majority_class)
+2025-10-14 15:30:49,054 INFO assets.registry Added asset 616782cc-f19e-4570-a216-f12608d5a481: image_32.png (label: majority_class)
+2025-10-14 15:30:49,057 INFO assets.registry Added asset 286052e3-570f-4808-832c-adbc7d6cffe1: image_33.png (label: majority_class)
+2025-10-14 15:30:49,060 INFO assets.registry Added asset e1bd4983-36d4-427c-9a1b-6331d5f071ac: image_34.png (label: majority_class)
+2025-10-14 15:30:49,064 INFO assets.registry Added asset f66f89c8-2391-4348-a62f-4ef7d5ee931b: image_35.png (label: majority_class)
+2025-10-14 15:30:49,068 INFO assets.registry Added asset 277980a8-654f-44d8-b8d6-e1e6d67be6e3: image_36.png (label: majority_class)
+2025-10-14 15:30:49,071 INFO assets.registry Added asset f0bc91eb-120e-4525-bf32-17b6f0c2c1d7: image_37.png (label: majority_class)
+2025-10-14 15:30:49,074 INFO assets.registry Added asset 2c9c1a85-6dd4-415d-a9e4-6a3c984619fb: image_38.png (label: majority_class)
+2025-10-14 15:30:49,078 INFO assets.registry Added asset 4751d3db-734e-47ae-b535-ba653547ee08: image_39.png (label: majority_class)
+2025-10-14 15:30:49,081 INFO assets.registry Added asset e1668b92-e4d3-4464-a5f6-1758b1116bf3: image_40.png (label: majority_class)
+2025-10-14 15:30:49,085 INFO assets.registry Added asset 1262d1b4-3f33-4970-88ff-ece18b6d511f: image_41.png (label: majority_class)
+2025-10-14 15:30:49,088 INFO assets.registry Added asset 895f3ff0-4f59-4e05-8c22-d0b5366f0f73: image_42.png (label: majority_class)
+2025-10-14 15:30:49,091 INFO assets.registry Added asset f354264f-1b72-4cc9-a296-5ddff97ca276: image_43.png (label: majority_class)
+2025-10-14 15:30:49,095 INFO assets.registry Added asset 636b93a4-6c7c-457f-95fe-9aae3a5d2ddb: image_44.png (label: majority_class)
+2025-10-14 15:30:49,098 INFO assets.registry Added asset 222d04f5-f99c-4e92-8a3f-514449e5f230: image_45.png (label: majority_class)
+2025-10-14 15:30:49,101 INFO assets.registry Added asset f3284685-5947-44d1-b2b6-bd88d978fa55: image_46.png (label: majority_class)
+2025-10-14 15:30:49,104 INFO assets.registry Added asset e52b0525-b36e-4ff1-adad-d6f4d79cdf23: image_47.png (label: majority_class)
+2025-10-14 15:30:49,108 INFO assets.registry Added asset e3e768ce-fb38-48f0-b105-aca82d3761d3: image_48.png (label: majority_class)
+2025-10-14 15:30:49,112 INFO assets.registry Added asset a525fb07-ba3b-4e03-ac52-a212371cfa05: image_49.png (label: majority_class)
+2025-10-14 15:30:49,115 INFO assets.registry Added asset d701a113-61b6-499c-9198-9755e30d8dfb: image_0.png (label: minority_class_1)
+2025-10-14 15:30:49,118 INFO assets.registry Added asset 821b2eb8-6b63-469f-8817-24d1b3eed53f: image_1.png (label: minority_class_1)
+2025-10-14 15:30:49,122 INFO assets.registry Added asset 1d237441-b11d-4318-930e-02ebf103d2af: image_2.png (label: minority_class_1)
+2025-10-14 15:30:49,126 INFO assets.registry Added asset 076375a4-6b52-423d-a98c-ecf8dc3e27e4: image_3.png (label: minority_class_1)
+2025-10-14 15:30:49,130 INFO assets.registry Added asset 3d158aac-331a-484c-80ce-f4f533b58221: image_4.png (label: minority_class_1)
+2025-10-14 15:30:49,133 INFO assets.registry Added asset 85490bf0-17d2-4ffb-a416-c1dba4272f05: image_0.png (label: minority_class_2)
+2025-10-14 15:30:49,136 INFO assets.registry Added asset 01a5a586-2294-4709-abb1-ca8cb842be4e: image_1.png (label: minority_class_2)
+2025-10-14 15:30:49,140 INFO assets.registry Added asset a0161697-b853-4aa2-82d0-12e0e7bfe4e6: image_2.png (label: minority_class_2)
+2025-10-14 15:30:49,140 INFO upload.service Ingested 58 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:30:49 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:30:49,160 INFO augment.router Running SMOTE on 58 images
+2025-10-14 15:30:54,934 INFO augment.service Generated 92 synthetic images
+2025-10-14 15:30:54,939 INFO augment.router Computing quality metrics for 92 synthetic images
+2025-10-14 15:30:56,895 INFO augment.router Creating ZIP file with augmented dataset
+2025-10-14 15:30:56,896 INFO augment.router Added metadata JSON to ZIP
+2025-10-14 15:30:56,896 INFO augment.router Adding original images to ZIP
+2025-10-14 15:30:56,900 INFO augment.router Adding synthetic images to ZIP
+2025-10-14 15:30:56,905 INFO augment.router ZIP file created successfully, size: 49650 bytes
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 200
+2025-10-14 15:30:56,955 INFO assets.registry Deleted asset bb250b53-67fd-43ea-a506-7e29d0043c6f
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/bb250b53-67fd-43ea-a506-7e29d0043c6f HTTP/1.1" 200
+2025-10-14 15:30:56,961 INFO assets.registry Deleted asset 8fd6c5b4-5ba9-453e-8ab4-60ad3f156536
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8fd6c5b4-5ba9-453e-8ab4-60ad3f156536 HTTP/1.1" 200
+2025-10-14 15:30:56,965 INFO assets.registry Deleted asset 0ac7fa11-3467-4eab-81ba-029bbc58650e
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0ac7fa11-3467-4eab-81ba-029bbc58650e HTTP/1.1" 200
+2025-10-14 15:30:56,970 INFO assets.registry Deleted asset e3d941f1-7a5f-4c09-b178-b73ce72b71dc
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e3d941f1-7a5f-4c09-b178-b73ce72b71dc HTTP/1.1" 200
+2025-10-14 15:30:56,975 INFO assets.registry Deleted asset 323001f1-37f5-45f2-8f6e-614f0c85436d
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/323001f1-37f5-45f2-8f6e-614f0c85436d HTTP/1.1" 200
+2025-10-14 15:30:56,979 INFO assets.registry Deleted asset 2960d5b4-dcd2-416b-9db4-69d0962524b6
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/2960d5b4-dcd2-416b-9db4-69d0962524b6 HTTP/1.1" 200
+2025-10-14 15:30:56,983 INFO assets.registry Deleted asset 37609f28-6339-46cf-baa5-e9b0da474b47
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/37609f28-6339-46cf-baa5-e9b0da474b47 HTTP/1.1" 200
+2025-10-14 15:30:56,987 INFO assets.registry Deleted asset 0cd5f52a-b27a-495a-a24e-b977d31f0528
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0cd5f52a-b27a-495a-a24e-b977d31f0528 HTTP/1.1" 200
+2025-10-14 15:30:56,991 INFO assets.registry Deleted asset 9a609557-9c06-4315-85b9-20f894185fbd
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9a609557-9c06-4315-85b9-20f894185fbd HTTP/1.1" 200
+2025-10-14 15:30:56,995 INFO assets.registry Deleted asset 1c2525cd-b553-4d46-939c-164d2552c8e3
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1c2525cd-b553-4d46-939c-164d2552c8e3 HTTP/1.1" 200
+2025-10-14 15:30:56,999 INFO assets.registry Deleted asset 20d9dc07-5c2c-415f-ad1d-c4ea279fa5b7
+[32mINFO[0m:     2025-10-14 15:30:56 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/20d9dc07-5c2c-415f-ad1d-c4ea279fa5b7 HTTP/1.1" 200
+2025-10-14 15:30:57,003 INFO assets.registry Deleted asset 55236f76-2b84-4bf6-9c7a-f3e12e45facc
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/55236f76-2b84-4bf6-9c7a-f3e12e45facc HTTP/1.1" 200
+2025-10-14 15:30:57,008 INFO assets.registry Deleted asset f0b3c43f-ce89-496b-9c64-da92342e6344
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f0b3c43f-ce89-496b-9c64-da92342e6344 HTTP/1.1" 200
+2025-10-14 15:30:57,012 INFO assets.registry Deleted asset bbc69897-ce77-4d8d-8b33-06ba42ede407
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/bbc69897-ce77-4d8d-8b33-06ba42ede407 HTTP/1.1" 200
+2025-10-14 15:30:57,016 INFO assets.registry Deleted asset 83207f3f-8232-49e7-a951-a3dcee0ddaf4
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/83207f3f-8232-49e7-a951-a3dcee0ddaf4 HTTP/1.1" 200
+2025-10-14 15:30:57,019 INFO assets.registry Deleted asset 15039269-b1fe-422c-82d3-ca9e7519b00a
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/15039269-b1fe-422c-82d3-ca9e7519b00a HTTP/1.1" 200
+2025-10-14 15:30:57,022 INFO assets.registry Deleted asset 73751c9c-7c36-45a1-828e-1a835bc687cb
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/73751c9c-7c36-45a1-828e-1a835bc687cb HTTP/1.1" 200
+2025-10-14 15:30:57,026 INFO assets.registry Deleted asset 5c4406fa-2532-4c4d-8d9c-834256fc3180
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5c4406fa-2532-4c4d-8d9c-834256fc3180 HTTP/1.1" 200
+2025-10-14 15:30:57,029 INFO assets.registry Deleted asset 0569f9fd-f763-4a57-ac67-e80380e54e94
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0569f9fd-f763-4a57-ac67-e80380e54e94 HTTP/1.1" 200
+2025-10-14 15:30:57,032 INFO assets.registry Deleted asset 59707f01-8cec-4a7a-912b-74a24fb783e5
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/59707f01-8cec-4a7a-912b-74a24fb783e5 HTTP/1.1" 200
+2025-10-14 15:30:57,035 INFO assets.registry Deleted asset b608e887-e906-4b2f-af62-f5b7c078b448
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b608e887-e906-4b2f-af62-f5b7c078b448 HTTP/1.1" 200
+2025-10-14 15:30:57,038 INFO assets.registry Deleted asset 907d874c-0153-46a4-b5c3-e5d52aa8c0b4
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/907d874c-0153-46a4-b5c3-e5d52aa8c0b4 HTTP/1.1" 200
+2025-10-14 15:30:57,041 INFO assets.registry Deleted asset b8513d5c-7748-4416-83c9-e78ea0c4ead4
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b8513d5c-7748-4416-83c9-e78ea0c4ead4 HTTP/1.1" 200
+2025-10-14 15:30:57,044 INFO assets.registry Deleted asset b5d7b2e9-2504-4415-b04a-704942a46bc7
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b5d7b2e9-2504-4415-b04a-704942a46bc7 HTTP/1.1" 200
+2025-10-14 15:30:57,047 INFO assets.registry Deleted asset 93bd2bb2-69ba-431f-924b-667ae057c05a
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/93bd2bb2-69ba-431f-924b-667ae057c05a HTTP/1.1" 200
+2025-10-14 15:30:57,050 INFO assets.registry Deleted asset 1dd60b12-e877-411d-8e53-e8968fd0792c
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1dd60b12-e877-411d-8e53-e8968fd0792c HTTP/1.1" 200
+2025-10-14 15:30:57,053 INFO assets.registry Deleted asset 338f63db-d60a-406d-a9df-988ffbac80a3
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/338f63db-d60a-406d-a9df-988ffbac80a3 HTTP/1.1" 200
+2025-10-14 15:30:57,056 INFO assets.registry Deleted asset 05f995a6-b7c7-4957-98bd-65053447237d
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/05f995a6-b7c7-4957-98bd-65053447237d HTTP/1.1" 200
+2025-10-14 15:30:57,060 INFO assets.registry Deleted asset 3b62d81a-804e-4284-a057-feaf5b40d73e
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/3b62d81a-804e-4284-a057-feaf5b40d73e HTTP/1.1" 200
+2025-10-14 15:30:57,063 INFO assets.registry Deleted asset 985a690f-eb07-4c67-bf3e-26f18b8611a9
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/985a690f-eb07-4c67-bf3e-26f18b8611a9 HTTP/1.1" 200
+2025-10-14 15:30:57,066 INFO assets.registry Deleted asset 625cc1b2-37df-4eac-8f90-37cd39aed2ac
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/625cc1b2-37df-4eac-8f90-37cd39aed2ac HTTP/1.1" 200
+2025-10-14 15:30:57,069 INFO assets.registry Deleted asset 535e072c-ba5a-4534-b87f-79ab2edece4f
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/535e072c-ba5a-4534-b87f-79ab2edece4f HTTP/1.1" 200
+2025-10-14 15:30:57,073 INFO assets.registry Deleted asset 616782cc-f19e-4570-a216-f12608d5a481
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/616782cc-f19e-4570-a216-f12608d5a481 HTTP/1.1" 200
+2025-10-14 15:30:57,076 INFO assets.registry Deleted asset 286052e3-570f-4808-832c-adbc7d6cffe1
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/286052e3-570f-4808-832c-adbc7d6cffe1 HTTP/1.1" 200
+2025-10-14 15:30:57,079 INFO assets.registry Deleted asset e1bd4983-36d4-427c-9a1b-6331d5f071ac
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e1bd4983-36d4-427c-9a1b-6331d5f071ac HTTP/1.1" 200
+2025-10-14 15:30:57,083 INFO assets.registry Deleted asset f66f89c8-2391-4348-a62f-4ef7d5ee931b
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f66f89c8-2391-4348-a62f-4ef7d5ee931b HTTP/1.1" 200
+2025-10-14 15:30:57,086 INFO assets.registry Deleted asset 277980a8-654f-44d8-b8d6-e1e6d67be6e3
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/277980a8-654f-44d8-b8d6-e1e6d67be6e3 HTTP/1.1" 200
+2025-10-14 15:30:57,089 INFO assets.registry Deleted asset f0bc91eb-120e-4525-bf32-17b6f0c2c1d7
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f0bc91eb-120e-4525-bf32-17b6f0c2c1d7 HTTP/1.1" 200
+2025-10-14 15:30:57,093 INFO assets.registry Deleted asset 2c9c1a85-6dd4-415d-a9e4-6a3c984619fb
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/2c9c1a85-6dd4-415d-a9e4-6a3c984619fb HTTP/1.1" 200
+2025-10-14 15:30:57,096 INFO assets.registry Deleted asset 4751d3db-734e-47ae-b535-ba653547ee08
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4751d3db-734e-47ae-b535-ba653547ee08 HTTP/1.1" 200
+2025-10-14 15:30:57,099 INFO assets.registry Deleted asset e1668b92-e4d3-4464-a5f6-1758b1116bf3
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e1668b92-e4d3-4464-a5f6-1758b1116bf3 HTTP/1.1" 200
+2025-10-14 15:30:57,102 INFO assets.registry Deleted asset 1262d1b4-3f33-4970-88ff-ece18b6d511f
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1262d1b4-3f33-4970-88ff-ece18b6d511f HTTP/1.1" 200
+2025-10-14 15:30:57,105 INFO assets.registry Deleted asset 895f3ff0-4f59-4e05-8c22-d0b5366f0f73
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/895f3ff0-4f59-4e05-8c22-d0b5366f0f73 HTTP/1.1" 200
+2025-10-14 15:30:57,108 INFO assets.registry Deleted asset f354264f-1b72-4cc9-a296-5ddff97ca276
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f354264f-1b72-4cc9-a296-5ddff97ca276 HTTP/1.1" 200
+2025-10-14 15:30:57,111 INFO assets.registry Deleted asset 636b93a4-6c7c-457f-95fe-9aae3a5d2ddb
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/636b93a4-6c7c-457f-95fe-9aae3a5d2ddb HTTP/1.1" 200
+2025-10-14 15:30:57,114 INFO assets.registry Deleted asset 222d04f5-f99c-4e92-8a3f-514449e5f230
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/222d04f5-f99c-4e92-8a3f-514449e5f230 HTTP/1.1" 200
+2025-10-14 15:30:57,117 INFO assets.registry Deleted asset f3284685-5947-44d1-b2b6-bd88d978fa55
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f3284685-5947-44d1-b2b6-bd88d978fa55 HTTP/1.1" 200
+2025-10-14 15:30:57,120 INFO assets.registry Deleted asset e52b0525-b36e-4ff1-adad-d6f4d79cdf23
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e52b0525-b36e-4ff1-adad-d6f4d79cdf23 HTTP/1.1" 200
+2025-10-14 15:30:57,123 INFO assets.registry Deleted asset e3e768ce-fb38-48f0-b105-aca82d3761d3
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e3e768ce-fb38-48f0-b105-aca82d3761d3 HTTP/1.1" 200
+2025-10-14 15:30:57,125 INFO assets.registry Deleted asset a525fb07-ba3b-4e03-ac52-a212371cfa05
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a525fb07-ba3b-4e03-ac52-a212371cfa05 HTTP/1.1" 200
+2025-10-14 15:30:57,128 INFO assets.registry Deleted asset d701a113-61b6-499c-9198-9755e30d8dfb
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d701a113-61b6-499c-9198-9755e30d8dfb HTTP/1.1" 200
+2025-10-14 15:30:57,131 INFO assets.registry Deleted asset 821b2eb8-6b63-469f-8817-24d1b3eed53f
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/821b2eb8-6b63-469f-8817-24d1b3eed53f HTTP/1.1" 200
+2025-10-14 15:30:57,133 INFO assets.registry Deleted asset 1d237441-b11d-4318-930e-02ebf103d2af
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1d237441-b11d-4318-930e-02ebf103d2af HTTP/1.1" 200
+2025-10-14 15:30:57,136 INFO assets.registry Deleted asset 076375a4-6b52-423d-a98c-ecf8dc3e27e4
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/076375a4-6b52-423d-a98c-ecf8dc3e27e4 HTTP/1.1" 200
+2025-10-14 15:30:57,138 INFO assets.registry Deleted asset 3d158aac-331a-484c-80ce-f4f533b58221
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/3d158aac-331a-484c-80ce-f4f533b58221 HTTP/1.1" 200
+2025-10-14 15:30:57,141 INFO assets.registry Deleted asset 85490bf0-17d2-4ffb-a416-c1dba4272f05
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/85490bf0-17d2-4ffb-a416-c1dba4272f05 HTTP/1.1" 200
+2025-10-14 15:30:57,144 INFO assets.registry Deleted asset 01a5a586-2294-4709-abb1-ca8cb842be4e
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/01a5a586-2294-4709-abb1-ca8cb842be4e HTTP/1.1" 200
+2025-10-14 15:30:57,146 INFO assets.registry Deleted asset a0161697-b853-4aa2-82d0-12e0e7bfe4e6
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a0161697-b853-4aa2-82d0-12e0e7bfe4e6 HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "POST /params HTTP/1.1" 200
+2025-10-14 15:30:57,180 INFO assets.registry Added asset 12302753-6591-4ac0-8d52-f26d81eb0f6a: image_0.png (label: majority)
+2025-10-14 15:30:57,183 INFO assets.registry Added asset c7d9656f-32a6-4c6c-9cce-f5a5e55f3646: image_1.png (label: majority)
+2025-10-14 15:30:57,186 INFO assets.registry Added asset d4546548-a4c4-4282-b18f-38e0e133cc1d: image_2.png (label: majority)
+2025-10-14 15:30:57,189 INFO assets.registry Added asset f4a743d3-8232-4359-93a2-325a30e5445e: image_3.png (label: majority)
+2025-10-14 15:30:57,192 INFO assets.registry Added asset 1ba739f1-f728-4333-a7bb-0f4bf6791509: image_4.png (label: majority)
+2025-10-14 15:30:57,194 INFO assets.registry Added asset 8ce0ac61-e06e-4747-9c17-1a4a7ba27305: image_5.png (label: majority)
+2025-10-14 15:30:57,198 INFO assets.registry Added asset 09b5302b-188a-4fa4-ad77-98a4e2195504: image_6.png (label: majority)
+2025-10-14 15:30:57,201 INFO assets.registry Added asset a4366bc8-26ef-41c1-a619-e9199237b9b9: image_7.png (label: majority)
+2025-10-14 15:30:57,204 INFO assets.registry Added asset a60ed9d0-eb7a-413e-ace6-7b665e8a839f: image_8.png (label: majority)
+2025-10-14 15:30:57,207 INFO assets.registry Added asset 1a7166e1-748a-4205-abbc-05eefa17745d: image_9.png (label: majority)
+2025-10-14 15:30:57,211 INFO assets.registry Added asset 95e3f9ea-79e9-45b2-8e37-43430ba06447: image_10.png (label: majority)
+2025-10-14 15:30:57,214 INFO assets.registry Added asset c81a5eb8-3255-4be8-871d-abeeba9daad3: image_11.png (label: majority)
+2025-10-14 15:30:57,217 INFO assets.registry Added asset 9170c7fb-8679-468f-9aa3-69b2f87b50a6: image_12.png (label: majority)
+2025-10-14 15:30:57,220 INFO assets.registry Added asset e50a12ed-1f7b-4cc3-8675-b6ef63a772b8: image_13.png (label: majority)
+2025-10-14 15:30:57,224 INFO assets.registry Added asset 9d27abe7-6ccc-4f1d-8e82-7e9e3b5b954d: image_14.png (label: majority)
+2025-10-14 15:30:57,227 INFO assets.registry Added asset e4d464bd-5c43-451d-94e7-88d109ecedf2: image_15.png (label: majority)
+2025-10-14 15:30:57,231 INFO assets.registry Added asset 53a629f4-5898-47c3-bed1-0babf0b3c7e4: image_16.png (label: majority)
+2025-10-14 15:30:57,235 INFO assets.registry Added asset 1b647e95-6058-4003-bca9-fee9b278d0ac: image_17.png (label: majority)
+2025-10-14 15:30:57,238 INFO assets.registry Added asset 824969de-9062-433f-9fd2-7a549189970b: image_18.png (label: majority)
+2025-10-14 15:30:57,241 INFO assets.registry Added asset b72cc2f7-e4fc-410b-bfac-06532234d145: image_19.png (label: majority)
+2025-10-14 15:30:57,244 INFO assets.registry Added asset cac93f9a-0431-45de-b33a-0eaef2904664: image_0.png (label: minority)
+2025-10-14 15:30:57,249 INFO assets.registry Added asset 4ff09773-3ad7-4ddb-99e8-683ed83bbf38: image_1.png (label: minority)
+2025-10-14 15:30:57,252 INFO assets.registry Added asset c90c1aaa-a459-42ce-8c3a-5655a325abaf: image_2.png (label: minority)
+2025-10-14 15:30:57,255 INFO assets.registry Added asset 7bdf3264-13b7-4664-95a4-1713e29bdf58: image_3.png (label: minority)
+2025-10-14 15:30:57,258 INFO assets.registry Added asset b83943bc-a99b-43fa-a34d-7b943b459c5b: image_4.png (label: minority)
+2025-10-14 15:30:57,258 INFO upload.service Ingested 25 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:30:57 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:30:57,269 INFO augment.router Running SMOTE on 25 images
+2025-10-14 15:31:00,059 INFO augment.service Generated 5 synthetic images
+2025-10-14 15:31:00,059 INFO augment.router Computing quality metrics for 5 synthetic images
+2025-10-14 15:31:00,134 INFO augment.router Creating ZIP file with augmented dataset
+2025-10-14 15:31:00,134 INFO augment.router Added metadata JSON to ZIP
+2025-10-14 15:31:00,134 INFO augment.router Adding original images to ZIP
+2025-10-14 15:31:00,135 INFO augment.router Adding synthetic images to ZIP
+2025-10-14 15:31:00,136 INFO augment.router ZIP file created successfully, size: 8121 bytes
+[32mINFO[0m:     2025-10-14 15:31:00 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:31:00 uvicorn.access 127.0.0.1:57720 - "POST /params HTTP/1.1" 200
+2025-10-14 15:31:00,209 INFO assets.registry Added asset ddd73796-2fa9-47e5-aaa8-cf1ba39a9e24: image_0.png (label: majority)
+2025-10-14 15:31:00,214 INFO assets.registry Added asset 702e8717-6ae6-492f-9f77-58357ca7908a: image_1.png (label: majority)
+2025-10-14 15:31:00,219 INFO assets.registry Added asset eeaf190c-8e67-492d-828e-1ec3fa4d075d: image_2.png (label: majority)
+2025-10-14 15:31:00,223 INFO assets.registry Added asset 1d3d6438-383d-413f-85c2-0d8ae2cfc2b4: image_3.png (label: majority)
+2025-10-14 15:31:00,228 INFO assets.registry Added asset 895e9bfd-934b-4612-a258-cdba974f69ce: image_4.png (label: majority)
+2025-10-14 15:31:00,231 INFO assets.registry Added asset 5dd0dbdd-0435-47e3-a5c9-51965133247d: image_5.png (label: majority)
+2025-10-14 15:31:00,235 INFO assets.registry Added asset 10de8185-f215-4f25-b7fe-7cea0ab754b4: image_6.png (label: majority)
+2025-10-14 15:31:00,239 INFO assets.registry Added asset 4565eb92-d882-475a-af87-1f2727b21c4a: image_7.png (label: majority)
+2025-10-14 15:31:00,242 INFO assets.registry Added asset c3676111-4997-4100-a9cb-c002fa0c753c: image_8.png (label: majority)
+2025-10-14 15:31:00,245 INFO assets.registry Added asset 90964dff-ace6-404e-a8ff-2087829866d2: image_9.png (label: majority)
+2025-10-14 15:31:00,248 INFO assets.registry Added asset 4a2b37de-3d55-48dc-afb9-3982865cb327: image_10.png (label: majority)
+2025-10-14 15:31:00,251 INFO assets.registry Added asset 79012ff2-bcaa-4c2e-a944-37cbac9d0ad8: image_11.png (label: majority)
+2025-10-14 15:31:00,254 INFO assets.registry Added asset 384af824-1420-46c2-8c17-6549f079a567: image_12.png (label: majority)
+2025-10-14 15:31:00,257 INFO assets.registry Added asset e789470a-4ac8-4c02-973f-ce13838a7e16: image_13.png (label: majority)
+2025-10-14 15:31:00,261 INFO assets.registry Added asset 0cf8a49d-4d3c-4ea3-9865-331d4f4ec352: image_14.png (label: majority)
+2025-10-14 15:31:00,264 INFO assets.registry Added asset 5057b811-8a1b-4de2-a4e7-3eca09bf0356: image_15.png (label: majority)
+2025-10-14 15:31:00,267 INFO assets.registry Added asset b53af32a-65ea-498c-ab58-71fec0813880: image_16.png (label: majority)
+2025-10-14 15:31:00,270 INFO assets.registry Added asset 4affa009-56ef-48fe-909a-84b314ed44bd: image_17.png (label: majority)
+2025-10-14 15:31:00,274 INFO assets.registry Added asset 8af14a94-148b-479c-a841-a010d9fdc248: image_18.png (label: majority)
+2025-10-14 15:31:00,277 INFO assets.registry Added asset de5aa405-ac8c-42b2-9732-32c464c3aadd: image_19.png (label: majority)
+2025-10-14 15:31:00,280 INFO assets.registry Added asset 0b2e6125-06c4-4a91-82bb-4477425b78dc: image_0.png (label: minority)
+2025-10-14 15:31:00,283 INFO assets.registry Added asset 33696de0-efd3-4f24-a6e6-aec087eb8a9f: image_1.png (label: minority)
+2025-10-14 15:31:00,286 INFO assets.registry Added asset bddf1513-cd5e-4155-86a9-e79d5eca00d1: image_2.png (label: minority)
+2025-10-14 15:31:00,290 INFO assets.registry Added asset ff835391-cb11-45c2-98ad-1ed7e86351e7: image_3.png (label: minority)
+2025-10-14 15:31:00,293 INFO assets.registry Added asset 6db041e3-0b35-45a1-81bf-6e5cda91cb5b: image_4.png (label: minority)
+2025-10-14 15:31:00,293 INFO upload.service Ingested 25 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:31:00 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:31:00,302 INFO augment.router Running SMOTE on 25 images
+2025-10-14 15:31:03,153 INFO augment.service Generated 15 synthetic images
+2025-10-14 15:31:03,156 INFO augment.router Computing quality metrics for 15 synthetic images
+2025-10-14 15:31:03,363 INFO augment.router Creating ZIP file with augmented dataset
+2025-10-14 15:31:03,363 INFO augment.router Added metadata JSON to ZIP
+2025-10-14 15:31:03,363 INFO augment.router Adding original images to ZIP
+2025-10-14 15:31:03,364 INFO augment.router Adding synthetic images to ZIP
+2025-10-14 15:31:03,365 INFO augment.router ZIP file created successfully, size: 11566 bytes
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 200
+2025-10-14 15:31:03,412 INFO assets.registry Deleted asset 12302753-6591-4ac0-8d52-f26d81eb0f6a
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/12302753-6591-4ac0-8d52-f26d81eb0f6a HTTP/1.1" 200
+2025-10-14 15:31:03,417 INFO assets.registry Deleted asset c7d9656f-32a6-4c6c-9cce-f5a5e55f3646
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c7d9656f-32a6-4c6c-9cce-f5a5e55f3646 HTTP/1.1" 200
+2025-10-14 15:31:03,423 INFO assets.registry Deleted asset d4546548-a4c4-4282-b18f-38e0e133cc1d
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d4546548-a4c4-4282-b18f-38e0e133cc1d HTTP/1.1" 200
+2025-10-14 15:31:03,429 INFO assets.registry Deleted asset f4a743d3-8232-4359-93a2-325a30e5445e
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f4a743d3-8232-4359-93a2-325a30e5445e HTTP/1.1" 200
+2025-10-14 15:31:03,434 INFO assets.registry Deleted asset 1ba739f1-f728-4333-a7bb-0f4bf6791509
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1ba739f1-f728-4333-a7bb-0f4bf6791509 HTTP/1.1" 200
+2025-10-14 15:31:03,438 INFO assets.registry Deleted asset 8ce0ac61-e06e-4747-9c17-1a4a7ba27305
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8ce0ac61-e06e-4747-9c17-1a4a7ba27305 HTTP/1.1" 200
+2025-10-14 15:31:03,442 INFO assets.registry Deleted asset 09b5302b-188a-4fa4-ad77-98a4e2195504
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/09b5302b-188a-4fa4-ad77-98a4e2195504 HTTP/1.1" 200
+2025-10-14 15:31:03,446 INFO assets.registry Deleted asset a4366bc8-26ef-41c1-a619-e9199237b9b9
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a4366bc8-26ef-41c1-a619-e9199237b9b9 HTTP/1.1" 200
+2025-10-14 15:31:03,449 INFO assets.registry Deleted asset a60ed9d0-eb7a-413e-ace6-7b665e8a839f
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a60ed9d0-eb7a-413e-ace6-7b665e8a839f HTTP/1.1" 200
+2025-10-14 15:31:03,453 INFO assets.registry Deleted asset 1a7166e1-748a-4205-abbc-05eefa17745d
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1a7166e1-748a-4205-abbc-05eefa17745d HTTP/1.1" 200
+2025-10-14 15:31:03,457 INFO assets.registry Deleted asset 95e3f9ea-79e9-45b2-8e37-43430ba06447
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/95e3f9ea-79e9-45b2-8e37-43430ba06447 HTTP/1.1" 200
+2025-10-14 15:31:03,460 INFO assets.registry Deleted asset c81a5eb8-3255-4be8-871d-abeeba9daad3
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c81a5eb8-3255-4be8-871d-abeeba9daad3 HTTP/1.1" 200
+2025-10-14 15:31:03,464 INFO assets.registry Deleted asset 9170c7fb-8679-468f-9aa3-69b2f87b50a6
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9170c7fb-8679-468f-9aa3-69b2f87b50a6 HTTP/1.1" 200
+2025-10-14 15:31:03,468 INFO assets.registry Deleted asset e50a12ed-1f7b-4cc3-8675-b6ef63a772b8
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e50a12ed-1f7b-4cc3-8675-b6ef63a772b8 HTTP/1.1" 200
+2025-10-14 15:31:03,471 INFO assets.registry Deleted asset 9d27abe7-6ccc-4f1d-8e82-7e9e3b5b954d
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9d27abe7-6ccc-4f1d-8e82-7e9e3b5b954d HTTP/1.1" 200
+2025-10-14 15:31:03,474 INFO assets.registry Deleted asset e4d464bd-5c43-451d-94e7-88d109ecedf2
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e4d464bd-5c43-451d-94e7-88d109ecedf2 HTTP/1.1" 200
+2025-10-14 15:31:03,477 INFO assets.registry Deleted asset 53a629f4-5898-47c3-bed1-0babf0b3c7e4
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/53a629f4-5898-47c3-bed1-0babf0b3c7e4 HTTP/1.1" 200
+2025-10-14 15:31:03,480 INFO assets.registry Deleted asset 1b647e95-6058-4003-bca9-fee9b278d0ac
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1b647e95-6058-4003-bca9-fee9b278d0ac HTTP/1.1" 200
+2025-10-14 15:31:03,483 INFO assets.registry Deleted asset 824969de-9062-433f-9fd2-7a549189970b
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/824969de-9062-433f-9fd2-7a549189970b HTTP/1.1" 200
+2025-10-14 15:31:03,486 INFO assets.registry Deleted asset b72cc2f7-e4fc-410b-bfac-06532234d145
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b72cc2f7-e4fc-410b-bfac-06532234d145 HTTP/1.1" 200
+2025-10-14 15:31:03,489 INFO assets.registry Deleted asset cac93f9a-0431-45de-b33a-0eaef2904664
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/cac93f9a-0431-45de-b33a-0eaef2904664 HTTP/1.1" 200
+2025-10-14 15:31:03,492 INFO assets.registry Deleted asset 4ff09773-3ad7-4ddb-99e8-683ed83bbf38
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4ff09773-3ad7-4ddb-99e8-683ed83bbf38 HTTP/1.1" 200
+2025-10-14 15:31:03,494 INFO assets.registry Deleted asset c90c1aaa-a459-42ce-8c3a-5655a325abaf
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c90c1aaa-a459-42ce-8c3a-5655a325abaf HTTP/1.1" 200
+2025-10-14 15:31:03,497 INFO assets.registry Deleted asset 7bdf3264-13b7-4664-95a4-1713e29bdf58
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/7bdf3264-13b7-4664-95a4-1713e29bdf58 HTTP/1.1" 200
+2025-10-14 15:31:03,500 INFO assets.registry Deleted asset b83943bc-a99b-43fa-a34d-7b943b459c5b
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b83943bc-a99b-43fa-a34d-7b943b459c5b HTTP/1.1" 200
+2025-10-14 15:31:03,503 INFO assets.registry Deleted asset ddd73796-2fa9-47e5-aaa8-cf1ba39a9e24
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ddd73796-2fa9-47e5-aaa8-cf1ba39a9e24 HTTP/1.1" 200
+2025-10-14 15:31:03,507 INFO assets.registry Deleted asset 702e8717-6ae6-492f-9f77-58357ca7908a
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/702e8717-6ae6-492f-9f77-58357ca7908a HTTP/1.1" 200
+2025-10-14 15:31:03,510 INFO assets.registry Deleted asset eeaf190c-8e67-492d-828e-1ec3fa4d075d
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/eeaf190c-8e67-492d-828e-1ec3fa4d075d HTTP/1.1" 200
+2025-10-14 15:31:03,514 INFO assets.registry Deleted asset 1d3d6438-383d-413f-85c2-0d8ae2cfc2b4
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1d3d6438-383d-413f-85c2-0d8ae2cfc2b4 HTTP/1.1" 200
+2025-10-14 15:31:03,518 INFO assets.registry Deleted asset 895e9bfd-934b-4612-a258-cdba974f69ce
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/895e9bfd-934b-4612-a258-cdba974f69ce HTTP/1.1" 200
+2025-10-14 15:31:03,522 INFO assets.registry Deleted asset 5dd0dbdd-0435-47e3-a5c9-51965133247d
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5dd0dbdd-0435-47e3-a5c9-51965133247d HTTP/1.1" 200
+2025-10-14 15:31:03,526 INFO assets.registry Deleted asset 10de8185-f215-4f25-b7fe-7cea0ab754b4
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/10de8185-f215-4f25-b7fe-7cea0ab754b4 HTTP/1.1" 200
+2025-10-14 15:31:03,530 INFO assets.registry Deleted asset 4565eb92-d882-475a-af87-1f2727b21c4a
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4565eb92-d882-475a-af87-1f2727b21c4a HTTP/1.1" 200
+2025-10-14 15:31:03,533 INFO assets.registry Deleted asset c3676111-4997-4100-a9cb-c002fa0c753c
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c3676111-4997-4100-a9cb-c002fa0c753c HTTP/1.1" 200
+2025-10-14 15:31:03,536 INFO assets.registry Deleted asset 90964dff-ace6-404e-a8ff-2087829866d2
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/90964dff-ace6-404e-a8ff-2087829866d2 HTTP/1.1" 200
+2025-10-14 15:31:03,539 INFO assets.registry Deleted asset 4a2b37de-3d55-48dc-afb9-3982865cb327
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4a2b37de-3d55-48dc-afb9-3982865cb327 HTTP/1.1" 200
+2025-10-14 15:31:03,542 INFO assets.registry Deleted asset 79012ff2-bcaa-4c2e-a944-37cbac9d0ad8
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/79012ff2-bcaa-4c2e-a944-37cbac9d0ad8 HTTP/1.1" 200
+2025-10-14 15:31:03,545 INFO assets.registry Deleted asset 384af824-1420-46c2-8c17-6549f079a567
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/384af824-1420-46c2-8c17-6549f079a567 HTTP/1.1" 200
+2025-10-14 15:31:03,549 INFO assets.registry Deleted asset e789470a-4ac8-4c02-973f-ce13838a7e16
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e789470a-4ac8-4c02-973f-ce13838a7e16 HTTP/1.1" 200
+2025-10-14 15:31:03,552 INFO assets.registry Deleted asset 0cf8a49d-4d3c-4ea3-9865-331d4f4ec352
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0cf8a49d-4d3c-4ea3-9865-331d4f4ec352 HTTP/1.1" 200
+2025-10-14 15:31:03,554 INFO assets.registry Deleted asset 5057b811-8a1b-4de2-a4e7-3eca09bf0356
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5057b811-8a1b-4de2-a4e7-3eca09bf0356 HTTP/1.1" 200
+2025-10-14 15:31:03,558 INFO assets.registry Deleted asset b53af32a-65ea-498c-ab58-71fec0813880
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b53af32a-65ea-498c-ab58-71fec0813880 HTTP/1.1" 200
+2025-10-14 15:31:03,561 INFO assets.registry Deleted asset 4affa009-56ef-48fe-909a-84b314ed44bd
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4affa009-56ef-48fe-909a-84b314ed44bd HTTP/1.1" 200
+2025-10-14 15:31:03,563 INFO assets.registry Deleted asset 8af14a94-148b-479c-a841-a010d9fdc248
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8af14a94-148b-479c-a841-a010d9fdc248 HTTP/1.1" 200
+2025-10-14 15:31:03,566 INFO assets.registry Deleted asset de5aa405-ac8c-42b2-9732-32c464c3aadd
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/de5aa405-ac8c-42b2-9732-32c464c3aadd HTTP/1.1" 200
+2025-10-14 15:31:03,568 INFO assets.registry Deleted asset 0b2e6125-06c4-4a91-82bb-4477425b78dc
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0b2e6125-06c4-4a91-82bb-4477425b78dc HTTP/1.1" 200
+2025-10-14 15:31:03,571 INFO assets.registry Deleted asset 33696de0-efd3-4f24-a6e6-aec087eb8a9f
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/33696de0-efd3-4f24-a6e6-aec087eb8a9f HTTP/1.1" 200
+2025-10-14 15:31:03,574 INFO assets.registry Deleted asset bddf1513-cd5e-4155-86a9-e79d5eca00d1
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/bddf1513-cd5e-4155-86a9-e79d5eca00d1 HTTP/1.1" 200
+2025-10-14 15:31:03,576 INFO assets.registry Deleted asset ff835391-cb11-45c2-98ad-1ed7e86351e7
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ff835391-cb11-45c2-98ad-1ed7e86351e7 HTTP/1.1" 200
+2025-10-14 15:31:03,579 INFO assets.registry Deleted asset 6db041e3-0b35-45a1-81bf-6e5cda91cb5b
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/6db041e3-0b35-45a1-81bf-6e5cda91cb5b HTTP/1.1" 200
+2025-10-14 15:31:03,611 INFO assets.registry Added asset 573cca9c-635b-4de7-9e94-b66effba2a21: image_0.png (label: class_a)
+2025-10-14 15:31:03,614 INFO assets.registry Added asset 73cdea76-5f01-409e-a7ef-b3c798ba542b: image_1.png (label: class_a)
+2025-10-14 15:31:03,617 INFO assets.registry Added asset 00ae1a82-bf61-4524-817e-085f1bdb27e4: image_2.png (label: class_a)
+2025-10-14 15:31:03,620 INFO assets.registry Added asset 44d443cb-8466-4980-b8c1-7505f30e729e: image_3.png (label: class_a)
+2025-10-14 15:31:03,623 INFO assets.registry Added asset dc3fd5cd-be90-4221-af4d-8e30419beec9: image_4.png (label: class_a)
+2025-10-14 15:31:03,626 INFO assets.registry Added asset 910f2801-8ad9-4855-8e2a-f5daf17e3c8f: image_5.png (label: class_a)
+2025-10-14 15:31:03,629 INFO assets.registry Added asset db8ae7ae-93f8-4e8e-ac77-6d8a8586f8db: image_6.png (label: class_a)
+2025-10-14 15:31:03,632 INFO assets.registry Added asset ca84a418-6187-49fe-bc58-a224ffd2e3ea: image_7.png (label: class_a)
+2025-10-14 15:31:03,636 INFO assets.registry Added asset a5a1a491-dc4e-4bf0-b218-cbf765f6571d: image_8.png (label: class_a)
+2025-10-14 15:31:03,639 INFO assets.registry Added asset ae7ab68b-f721-4007-a9c9-42e0a8fbbd5a: image_9.png (label: class_a)
+2025-10-14 15:31:03,642 INFO assets.registry Added asset 4b133949-37cb-493a-850e-a4e5d1fdb300: image_10.png (label: class_a)
+2025-10-14 15:31:03,645 INFO assets.registry Added asset c2d15598-4d96-4a28-b9cd-9fe1addf1d8c: image_11.png (label: class_a)
+2025-10-14 15:31:03,648 INFO assets.registry Added asset 943b562d-06f8-4c6c-9197-2c81fdb5d608: image_12.png (label: class_a)
+2025-10-14 15:31:03,652 INFO assets.registry Added asset 46f94cce-e7be-4868-9073-37d8ba2afe5e: image_13.png (label: class_a)
+2025-10-14 15:31:03,655 INFO assets.registry Added asset 5ecd851b-58c2-4312-a4bd-6fc440739cda: image_14.png (label: class_a)
+2025-10-14 15:31:03,658 INFO assets.registry Added asset 11d692cf-2744-43d1-a4d2-578513c4bdce: image_15.png (label: class_a)
+2025-10-14 15:31:03,661 INFO assets.registry Added asset 3a1fc585-6840-48b2-a891-38823ac541bd: image_16.png (label: class_a)
+2025-10-14 15:31:03,665 INFO assets.registry Added asset 00885ca7-6ab7-4cc6-b9e6-2085d2007c3a: image_17.png (label: class_a)
+2025-10-14 15:31:03,668 INFO assets.registry Added asset ae4c2b32-6f2e-43be-b90b-05573c2167a2: image_18.png (label: class_a)
+2025-10-14 15:31:03,671 INFO assets.registry Added asset b2f9a1f0-c455-4763-8397-bfd6abe98824: image_19.png (label: class_a)
+2025-10-14 15:31:03,674 INFO assets.registry Added asset ea3013c8-47d1-4850-8e76-734669efcb07: image_0.png (label: class_b)
+2025-10-14 15:31:03,678 INFO assets.registry Added asset d9e7258b-62f9-436c-99b3-1dc2c1cb861b: image_1.png (label: class_b)
+2025-10-14 15:31:03,681 INFO assets.registry Added asset c84dc226-7464-4716-ac8b-78981a04e0fb: image_2.png (label: class_b)
+2025-10-14 15:31:03,684 INFO assets.registry Added asset a3e39bfe-0497-48c9-abe0-43455f0d0ea1: image_3.png (label: class_b)
+2025-10-14 15:31:03,687 INFO assets.registry Added asset 5336d58e-f15b-458f-82b9-0515ac540b56: image_4.png (label: class_b)
+2025-10-14 15:31:03,688 INFO upload.service Ingested 25 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:31:03 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:31:03,697 INFO augment.router Running SMOTE on 25 images
+2025-10-14 15:31:06,571 INFO augment.service Generated 15 synthetic images
+2025-10-14 15:31:06,575 INFO augment.router Computing quality metrics for 15 synthetic images
+2025-10-14 15:31:06,790 INFO augment.router Creating ZIP file with augmented dataset
+2025-10-14 15:31:06,790 INFO augment.router Added metadata JSON to ZIP
+2025-10-14 15:31:06,790 INFO augment.router Adding original images to ZIP
+2025-10-14 15:31:06,792 INFO augment.router Adding synthetic images to ZIP
+2025-10-14 15:31:06,793 INFO augment.router ZIP file created successfully, size: 11446 bytes
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 200
+2025-10-14 15:31:06,801 INFO assets.registry Deleted asset 573cca9c-635b-4de7-9e94-b66effba2a21
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/573cca9c-635b-4de7-9e94-b66effba2a21 HTTP/1.1" 200
+2025-10-14 15:31:06,805 INFO assets.registry Deleted asset 73cdea76-5f01-409e-a7ef-b3c798ba542b
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/73cdea76-5f01-409e-a7ef-b3c798ba542b HTTP/1.1" 200
+2025-10-14 15:31:06,808 INFO assets.registry Deleted asset 00ae1a82-bf61-4524-817e-085f1bdb27e4
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/00ae1a82-bf61-4524-817e-085f1bdb27e4 HTTP/1.1" 200
+2025-10-14 15:31:06,812 INFO assets.registry Deleted asset 44d443cb-8466-4980-b8c1-7505f30e729e
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/44d443cb-8466-4980-b8c1-7505f30e729e HTTP/1.1" 200
+2025-10-14 15:31:06,816 INFO assets.registry Deleted asset dc3fd5cd-be90-4221-af4d-8e30419beec9
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/dc3fd5cd-be90-4221-af4d-8e30419beec9 HTTP/1.1" 200
+2025-10-14 15:31:06,819 INFO assets.registry Deleted asset 910f2801-8ad9-4855-8e2a-f5daf17e3c8f
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/910f2801-8ad9-4855-8e2a-f5daf17e3c8f HTTP/1.1" 200
+2025-10-14 15:31:06,822 INFO assets.registry Deleted asset db8ae7ae-93f8-4e8e-ac77-6d8a8586f8db
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/db8ae7ae-93f8-4e8e-ac77-6d8a8586f8db HTTP/1.1" 200
+2025-10-14 15:31:06,825 INFO assets.registry Deleted asset ca84a418-6187-49fe-bc58-a224ffd2e3ea
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ca84a418-6187-49fe-bc58-a224ffd2e3ea HTTP/1.1" 200
+2025-10-14 15:31:06,829 INFO assets.registry Deleted asset a5a1a491-dc4e-4bf0-b218-cbf765f6571d
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a5a1a491-dc4e-4bf0-b218-cbf765f6571d HTTP/1.1" 200
+2025-10-14 15:31:06,832 INFO assets.registry Deleted asset ae7ab68b-f721-4007-a9c9-42e0a8fbbd5a
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ae7ab68b-f721-4007-a9c9-42e0a8fbbd5a HTTP/1.1" 200
+2025-10-14 15:31:06,835 INFO assets.registry Deleted asset 4b133949-37cb-493a-850e-a4e5d1fdb300
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4b133949-37cb-493a-850e-a4e5d1fdb300 HTTP/1.1" 200
+2025-10-14 15:31:06,838 INFO assets.registry Deleted asset c2d15598-4d96-4a28-b9cd-9fe1addf1d8c
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c2d15598-4d96-4a28-b9cd-9fe1addf1d8c HTTP/1.1" 200
+2025-10-14 15:31:06,842 INFO assets.registry Deleted asset 943b562d-06f8-4c6c-9197-2c81fdb5d608
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/943b562d-06f8-4c6c-9197-2c81fdb5d608 HTTP/1.1" 200
+2025-10-14 15:31:06,845 INFO assets.registry Deleted asset 46f94cce-e7be-4868-9073-37d8ba2afe5e
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/46f94cce-e7be-4868-9073-37d8ba2afe5e HTTP/1.1" 200
+2025-10-14 15:31:06,848 INFO assets.registry Deleted asset 5ecd851b-58c2-4312-a4bd-6fc440739cda
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5ecd851b-58c2-4312-a4bd-6fc440739cda HTTP/1.1" 200
+2025-10-14 15:31:06,851 INFO assets.registry Deleted asset 11d692cf-2744-43d1-a4d2-578513c4bdce
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/11d692cf-2744-43d1-a4d2-578513c4bdce HTTP/1.1" 200
+2025-10-14 15:31:06,854 INFO assets.registry Deleted asset 3a1fc585-6840-48b2-a891-38823ac541bd
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/3a1fc585-6840-48b2-a891-38823ac541bd HTTP/1.1" 200
+2025-10-14 15:31:06,857 INFO assets.registry Deleted asset 00885ca7-6ab7-4cc6-b9e6-2085d2007c3a
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/00885ca7-6ab7-4cc6-b9e6-2085d2007c3a HTTP/1.1" 200
+2025-10-14 15:31:06,860 INFO assets.registry Deleted asset ae4c2b32-6f2e-43be-b90b-05573c2167a2
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ae4c2b32-6f2e-43be-b90b-05573c2167a2 HTTP/1.1" 200
+2025-10-14 15:31:06,863 INFO assets.registry Deleted asset b2f9a1f0-c455-4763-8397-bfd6abe98824
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b2f9a1f0-c455-4763-8397-bfd6abe98824 HTTP/1.1" 200
+2025-10-14 15:31:06,866 INFO assets.registry Deleted asset ea3013c8-47d1-4850-8e76-734669efcb07
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ea3013c8-47d1-4850-8e76-734669efcb07 HTTP/1.1" 200
+2025-10-14 15:31:06,869 INFO assets.registry Deleted asset d9e7258b-62f9-436c-99b3-1dc2c1cb861b
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d9e7258b-62f9-436c-99b3-1dc2c1cb861b HTTP/1.1" 200
+2025-10-14 15:31:06,873 INFO assets.registry Deleted asset c84dc226-7464-4716-ac8b-78981a04e0fb
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c84dc226-7464-4716-ac8b-78981a04e0fb HTTP/1.1" 200
+2025-10-14 15:31:06,875 INFO assets.registry Deleted asset a3e39bfe-0497-48c9-abe0-43455f0d0ea1
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a3e39bfe-0497-48c9-abe0-43455f0d0ea1 HTTP/1.1" 200
+2025-10-14 15:31:06,925 INFO assets.registry Deleted asset 5336d58e-f15b-458f-82b9-0515ac540b56
+[32mINFO[0m:     2025-10-14 15:31:06 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5336d58e-f15b-458f-82b9-0515ac540b56 HTTP/1.1" 200
+2025-10-14 15:31:07,024 INFO assets.registry Added asset 41725342-83f0-4088-b4ab-191b054bba36: image_0.png (label: class_1)
+2025-10-14 15:31:07,027 INFO assets.registry Added asset 9482b5a4-7584-46a6-a46f-88a155033e52: image_1.png (label: class_1)
+2025-10-14 15:31:07,031 INFO assets.registry Added asset 4902a648-52a9-4ab4-96f9-6a9955a49128: image_2.png (label: class_1)
+2025-10-14 15:31:07,034 INFO assets.registry Added asset 13b51942-5d5e-42d6-8af7-e65122ff6a9f: image_3.png (label: class_1)
+2025-10-14 15:31:07,037 INFO assets.registry Added asset 3a50bad4-a252-4dcd-ab7d-f1fe957dc640: image_4.png (label: class_1)
+2025-10-14 15:31:07,040 INFO assets.registry Added asset 4969d5e9-909b-45ce-90ca-01afc47bbc54: image_5.png (label: class_1)
+2025-10-14 15:31:07,043 INFO assets.registry Added asset 4304be67-62a3-45cd-9a38-8ec34d3a080c: image_6.png (label: class_1)
+2025-10-14 15:31:07,046 INFO assets.registry Added asset 648491b4-f058-42b0-b02b-840616c5258b: image_7.png (label: class_1)
+2025-10-14 15:31:07,049 INFO assets.registry Added asset 78dd67c8-ff00-4b9a-92ae-ea033ff60627: image_8.png (label: class_1)
+2025-10-14 15:31:07,052 INFO assets.registry Added asset 4d8d8dbf-aa6e-4af2-992a-35531adefc2c: image_9.png (label: class_1)
+2025-10-14 15:31:07,054 INFO assets.registry Added asset e360e3c0-d60e-47a6-b4c4-261f53b1b25e: image_10.png (label: class_1)
+2025-10-14 15:31:07,057 INFO assets.registry Added asset a777292e-51bc-4af7-8441-cb0e874b51a0: image_11.png (label: class_1)
+2025-10-14 15:31:07,060 INFO assets.registry Added asset e567aea7-77a8-4723-a6f2-e7d4de044e7e: image_12.png (label: class_1)
+2025-10-14 15:31:07,063 INFO assets.registry Added asset 03eaa240-9cb5-47e2-b76f-7e5fc1b11e1b: image_13.png (label: class_1)
+2025-10-14 15:31:07,065 INFO assets.registry Added asset f9aa59ef-72ab-4297-81ca-51f46d57961e: image_14.png (label: class_1)
+2025-10-14 15:31:07,068 INFO assets.registry Added asset 9983065d-ae4a-4ebe-a931-7330adae2e5c: image_15.png (label: class_1)
+2025-10-14 15:31:07,071 INFO assets.registry Added asset 9b7742c8-bef2-4446-924c-c250c63b2bc5: image_16.png (label: class_1)
+2025-10-14 15:31:07,074 INFO assets.registry Added asset 628ee478-701c-431e-bae0-c914afc225fe: image_17.png (label: class_1)
+2025-10-14 15:31:07,076 INFO assets.registry Added asset d2e8a1fe-029b-4f06-8694-1352fbab5507: image_18.png (label: class_1)
+2025-10-14 15:31:07,079 INFO assets.registry Added asset 1cf5f849-7e01-446c-acf3-c010a68fda0d: image_19.png (label: class_1)
+2025-10-14 15:31:07,082 INFO assets.registry Added asset b1285223-4500-4ce5-b0b0-de42c0dca068: image_20.png (label: class_1)
+2025-10-14 15:31:07,085 INFO assets.registry Added asset 9f4a7cf8-12ba-4af4-a7e6-658841ada98c: image_21.png (label: class_1)
+2025-10-14 15:31:07,088 INFO assets.registry Added asset e71362e0-9174-4463-811f-6b5cd222a7c4: image_22.png (label: class_1)
+2025-10-14 15:31:07,091 INFO assets.registry Added asset 0c30b8b2-cccb-477e-b5dc-17d7f6a7b688: image_23.png (label: class_1)
+2025-10-14 15:31:07,094 INFO assets.registry Added asset be02ace8-327d-4349-b8b3-5d7cefa492a8: image_24.png (label: class_1)
+2025-10-14 15:31:07,096 INFO assets.registry Added asset b474c1df-f869-4eeb-9c53-713f78f21761: image_25.png (label: class_1)
+2025-10-14 15:31:07,099 INFO assets.registry Added asset 8088e81b-ebfa-4246-9114-db30d3fe2935: image_26.png (label: class_1)
+2025-10-14 15:31:07,102 INFO assets.registry Added asset 30e7d38d-3064-4038-b92e-72398c1546b7: image_27.png (label: class_1)
+2025-10-14 15:31:07,106 INFO assets.registry Added asset c210fcea-3275-4dd7-b3fa-e2c32228b260: image_28.png (label: class_1)
+2025-10-14 15:31:07,108 INFO assets.registry Added asset 94fdbd98-3b22-4942-963e-b031bd2dc4a6: image_29.png (label: class_1)
+2025-10-14 15:31:07,112 INFO assets.registry Added asset a5eaa1fb-7beb-4b4f-9a1e-07912fb20b0a: image_30.png (label: class_1)
+2025-10-14 15:31:07,114 INFO assets.registry Added asset da7441a0-df2b-4428-b9f7-4e771bdccd80: image_31.png (label: class_1)
+2025-10-14 15:31:07,118 INFO assets.registry Added asset b50a1203-7541-49ed-bb23-3fd0fe797c0b: image_32.png (label: class_1)
+2025-10-14 15:31:07,121 INFO assets.registry Added asset ebf7a467-d8c5-40e9-a234-9071b124d3cd: image_33.png (label: class_1)
+2025-10-14 15:31:07,124 INFO assets.registry Added asset 12ac6ed6-0f00-4f92-89e6-974f8606d6a9: image_34.png (label: class_1)
+2025-10-14 15:31:07,127 INFO assets.registry Added asset 30267d23-6f29-43d0-98f6-fba323ffb0a4: image_35.png (label: class_1)
+2025-10-14 15:31:07,130 INFO assets.registry Added asset 6fba15e8-823a-4fb2-be98-bf70caa6b759: image_36.png (label: class_1)
+2025-10-14 15:31:07,133 INFO assets.registry Added asset d3a33368-105a-48fa-900f-a2e60ed91f01: image_37.png (label: class_1)
+2025-10-14 15:31:07,136 INFO assets.registry Added asset 111c4058-fd37-4999-bf93-afa25243a745: image_38.png (label: class_1)
+2025-10-14 15:31:07,139 INFO assets.registry Added asset 8534e894-3d3b-445e-9fd6-205017b45b22: image_39.png (label: class_1)
+2025-10-14 15:31:07,142 INFO assets.registry Added asset dd761820-dc75-4be0-ba4f-a02fe1d5189f: image_40.png (label: class_1)
+2025-10-14 15:31:07,145 INFO assets.registry Added asset 223cc64b-d4b2-4ec7-8f62-c7c580c1a4f2: image_41.png (label: class_1)
+2025-10-14 15:31:07,148 INFO assets.registry Added asset 0f3fa9f4-4de0-4a93-bb6e-e5bfc8f684ac: image_42.png (label: class_1)
+2025-10-14 15:31:07,151 INFO assets.registry Added asset aad4b41d-6bd2-4808-9212-5dfda74f5c49: image_43.png (label: class_1)
+2025-10-14 15:31:07,154 INFO assets.registry Added asset 1feef043-1319-4593-8737-0dcb8c2e13e3: image_44.png (label: class_1)
+2025-10-14 15:31:07,158 INFO assets.registry Added asset 22fe9a5b-04a6-4807-b7a9-27ae8a9e6dba: image_45.png (label: class_1)
+2025-10-14 15:31:07,161 INFO assets.registry Added asset 7fc0db94-c9fa-4cd2-8756-fa489d5fa109: image_46.png (label: class_1)
+2025-10-14 15:31:07,165 INFO assets.registry Added asset e2bcd31f-c740-49ee-bf82-754c10a83b96: image_47.png (label: class_1)
+2025-10-14 15:31:07,168 INFO assets.registry Added asset 9fe657dc-52ce-40a4-921c-8e8565566722: image_48.png (label: class_1)
+2025-10-14 15:31:07,172 INFO assets.registry Added asset f1f880f9-3d73-481d-b315-0610bb5904ad: image_49.png (label: class_1)
+2025-10-14 15:31:07,175 INFO assets.registry Added asset 41ddcb09-57e4-4dd0-9247-c4c88973251c: image_0.png (label: class_2)
+2025-10-14 15:31:07,178 INFO assets.registry Added asset 68c8ae85-a4ae-4811-9dcd-b4592bc6dad4: image_1.png (label: class_2)
+2025-10-14 15:31:07,182 INFO assets.registry Added asset 744f6e06-96aa-4a7b-88ac-58649b51a310: image_2.png (label: class_2)
+2025-10-14 15:31:07,185 INFO assets.registry Added asset bbd77a9f-c906-4e18-9bf1-2342640f53d2: image_3.png (label: class_2)
+2025-10-14 15:31:07,188 INFO assets.registry Added asset 87dfa23a-0e36-4190-8802-33bf001a776e: image_4.png (label: class_2)
+2025-10-14 15:31:07,192 INFO assets.registry Added asset e5dd5406-72db-4b16-8478-00ef89140dae: image_5.png (label: class_2)
+2025-10-14 15:31:07,195 INFO assets.registry Added asset 5cf75dff-0689-43df-b4ac-2f79d92dd800: image_6.png (label: class_2)
+2025-10-14 15:31:07,198 INFO assets.registry Added asset 673df2c0-e3ab-43b2-9e64-c4f9d07bdb12: image_7.png (label: class_2)
+2025-10-14 15:31:07,202 INFO assets.registry Added asset cb76d1dd-cf28-4e79-b014-10c5f39c9958: image_8.png (label: class_2)
+2025-10-14 15:31:07,205 INFO assets.registry Added asset 2461f8a7-a359-434a-b7ef-6970eab99ee8: image_9.png (label: class_2)
+2025-10-14 15:31:07,208 INFO assets.registry Added asset d4542ed5-e9f0-4186-a99f-b2d978c70291: image_10.png (label: class_2)
+2025-10-14 15:31:07,212 INFO assets.registry Added asset f3721b04-f22b-4fd8-a656-e8864c3798c1: image_11.png (label: class_2)
+2025-10-14 15:31:07,215 INFO assets.registry Added asset 9c2ae325-a869-42cb-b4c8-cd72334309ce: image_12.png (label: class_2)
+2025-10-14 15:31:07,219 INFO assets.registry Added asset 29a865cc-2b9f-4910-a557-d49d9ea26ef4: image_13.png (label: class_2)
+2025-10-14 15:31:07,223 INFO assets.registry Added asset 0b3295e1-bc54-4098-954f-bc9fdd3d8965: image_14.png (label: class_2)
+2025-10-14 15:31:07,226 INFO assets.registry Added asset 7bb0e5bb-3558-4e0a-a638-a55b8ed4597c: image_15.png (label: class_2)
+2025-10-14 15:31:07,230 INFO assets.registry Added asset 124f6fa9-ba42-4656-9922-957719885503: image_16.png (label: class_2)
+2025-10-14 15:31:07,234 INFO assets.registry Added asset dae275b6-251e-47db-8b47-c8834537e0c2: image_17.png (label: class_2)
+2025-10-14 15:31:07,237 INFO assets.registry Added asset 6d316145-c6e0-40a8-9679-3f570ec05949: image_18.png (label: class_2)
+2025-10-14 15:31:07,241 INFO assets.registry Added asset a0195078-62cb-4a50-9e9d-26dad0375f96: image_19.png (label: class_2)
+2025-10-14 15:31:07,245 INFO assets.registry Added asset 91259ade-0f8b-4e44-849b-b51c43c2a76e: image_20.png (label: class_2)
+2025-10-14 15:31:07,248 INFO assets.registry Added asset abb59b80-2327-4ab3-a5cf-06ab1f4d38cd: image_21.png (label: class_2)
+2025-10-14 15:31:07,252 INFO assets.registry Added asset fd80113e-e445-4fc7-bbf2-7eba3ec19a45: image_22.png (label: class_2)
+2025-10-14 15:31:07,255 INFO assets.registry Added asset e290660b-2b2d-489a-81f2-ef44deb8b8ad: image_23.png (label: class_2)
+2025-10-14 15:31:07,259 INFO assets.registry Added asset cd65f8ef-b4ab-4649-9ac6-6a022b6e4ad1: image_24.png (label: class_2)
+2025-10-14 15:31:07,262 INFO assets.registry Added asset 818f96d9-6182-4ffd-9177-8981cce6102f: image_0.png (label: class_3)
+2025-10-14 15:31:07,266 INFO assets.registry Added asset ebc956f5-0565-42c2-afd8-606a3e160bf2: image_1.png (label: class_3)
+2025-10-14 15:31:07,269 INFO assets.registry Added asset 41c8cfe2-53db-4c9e-afe0-0b4ad99abc8f: image_2.png (label: class_3)
+2025-10-14 15:31:07,272 INFO assets.registry Added asset c8bd9758-9cfd-4cf4-910e-95893d123731: image_3.png (label: class_3)
+2025-10-14 15:31:07,276 INFO assets.registry Added asset 67006c90-a113-4833-9b6e-e0a93ef90f91: image_4.png (label: class_3)
+2025-10-14 15:31:07,280 INFO assets.registry Added asset 2b1c8085-5d7e-418a-bde3-b621b9428542: image_5.png (label: class_3)
+2025-10-14 15:31:07,283 INFO assets.registry Added asset ea12e0df-0412-4d0d-a623-2b469214527f: image_6.png (label: class_3)
+2025-10-14 15:31:07,288 INFO assets.registry Added asset 1354df80-d2bb-41c2-ae53-30d131a172d1: image_7.png (label: class_3)
+2025-10-14 15:31:07,291 INFO assets.registry Added asset 2e21c856-e933-43dc-b734-67396d376d78: image_8.png (label: class_3)
+2025-10-14 15:31:07,295 INFO assets.registry Added asset da2d06f6-92d8-445e-a746-39d6770f7341: image_9.png (label: class_3)
+2025-10-14 15:31:07,299 INFO assets.registry Added asset 5c80a5d6-5dce-4d83-a9b6-53848e98daf9: image_0.png (label: class_4)
+2025-10-14 15:31:07,302 INFO assets.registry Added asset a27e3fe0-4baf-4911-bc03-55cdd1e36a54: image_1.png (label: class_4)
+2025-10-14 15:31:07,306 INFO assets.registry Added asset 7e017af2-f2a9-45bc-a6d3-997c7831f34b: image_2.png (label: class_4)
+2025-10-14 15:31:07,311 INFO assets.registry Added asset cb243069-a8fd-439f-b1ea-8c467cf42a76: image_3.png (label: class_4)
+2025-10-14 15:31:07,314 INFO assets.registry Added asset 613abaf9-296a-4d9e-a1f4-13c240a2d72c: image_4.png (label: class_4)
+2025-10-14 15:31:07,314 INFO upload.service Ingested 90 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:31:07 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:31:07,350 INFO augment.router Running SMOTE on 90 images
+2025-10-14 15:31:16,134 INFO augment.service Generated 110 synthetic images
+2025-10-14 15:31:16,141 INFO augment.router Computing quality metrics for 110 synthetic images
+2025-10-14 15:31:17,887 INFO augment.router Creating ZIP file with augmented dataset
+2025-10-14 15:31:17,888 INFO augment.router Added metadata JSON to ZIP
+2025-10-14 15:31:17,888 INFO augment.router Adding original images to ZIP
+2025-10-14 15:31:17,893 INFO augment.router Adding synthetic images to ZIP
+2025-10-14 15:31:17,899 INFO augment.router ZIP file created successfully, size: 59054 bytes
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 200
+2025-10-14 15:31:17,908 INFO assets.registry Deleted asset 41725342-83f0-4088-b4ab-191b054bba36
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/41725342-83f0-4088-b4ab-191b054bba36 HTTP/1.1" 200
+2025-10-14 15:31:17,913 INFO assets.registry Deleted asset 9482b5a4-7584-46a6-a46f-88a155033e52
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9482b5a4-7584-46a6-a46f-88a155033e52 HTTP/1.1" 200
+2025-10-14 15:31:17,918 INFO assets.registry Deleted asset 4902a648-52a9-4ab4-96f9-6a9955a49128
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4902a648-52a9-4ab4-96f9-6a9955a49128 HTTP/1.1" 200
+2025-10-14 15:31:17,922 INFO assets.registry Deleted asset 13b51942-5d5e-42d6-8af7-e65122ff6a9f
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/13b51942-5d5e-42d6-8af7-e65122ff6a9f HTTP/1.1" 200
+2025-10-14 15:31:17,927 INFO assets.registry Deleted asset 3a50bad4-a252-4dcd-ab7d-f1fe957dc640
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/3a50bad4-a252-4dcd-ab7d-f1fe957dc640 HTTP/1.1" 200
+2025-10-14 15:31:17,930 INFO assets.registry Deleted asset 4969d5e9-909b-45ce-90ca-01afc47bbc54
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4969d5e9-909b-45ce-90ca-01afc47bbc54 HTTP/1.1" 200
+2025-10-14 15:31:17,934 INFO assets.registry Deleted asset 4304be67-62a3-45cd-9a38-8ec34d3a080c
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4304be67-62a3-45cd-9a38-8ec34d3a080c HTTP/1.1" 200
+2025-10-14 15:31:17,938 INFO assets.registry Deleted asset 648491b4-f058-42b0-b02b-840616c5258b
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/648491b4-f058-42b0-b02b-840616c5258b HTTP/1.1" 200
+2025-10-14 15:31:17,942 INFO assets.registry Deleted asset 78dd67c8-ff00-4b9a-92ae-ea033ff60627
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/78dd67c8-ff00-4b9a-92ae-ea033ff60627 HTTP/1.1" 200
+2025-10-14 15:31:17,946 INFO assets.registry Deleted asset 4d8d8dbf-aa6e-4af2-992a-35531adefc2c
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4d8d8dbf-aa6e-4af2-992a-35531adefc2c HTTP/1.1" 200
+2025-10-14 15:31:17,950 INFO assets.registry Deleted asset e360e3c0-d60e-47a6-b4c4-261f53b1b25e
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e360e3c0-d60e-47a6-b4c4-261f53b1b25e HTTP/1.1" 200
+2025-10-14 15:31:17,954 INFO assets.registry Deleted asset a777292e-51bc-4af7-8441-cb0e874b51a0
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a777292e-51bc-4af7-8441-cb0e874b51a0 HTTP/1.1" 200
+2025-10-14 15:31:17,957 INFO assets.registry Deleted asset e567aea7-77a8-4723-a6f2-e7d4de044e7e
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e567aea7-77a8-4723-a6f2-e7d4de044e7e HTTP/1.1" 200
+2025-10-14 15:31:17,961 INFO assets.registry Deleted asset 03eaa240-9cb5-47e2-b76f-7e5fc1b11e1b
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/03eaa240-9cb5-47e2-b76f-7e5fc1b11e1b HTTP/1.1" 200
+2025-10-14 15:31:17,965 INFO assets.registry Deleted asset f9aa59ef-72ab-4297-81ca-51f46d57961e
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f9aa59ef-72ab-4297-81ca-51f46d57961e HTTP/1.1" 200
+2025-10-14 15:31:17,969 INFO assets.registry Deleted asset 9983065d-ae4a-4ebe-a931-7330adae2e5c
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9983065d-ae4a-4ebe-a931-7330adae2e5c HTTP/1.1" 200
+2025-10-14 15:31:17,973 INFO assets.registry Deleted asset 9b7742c8-bef2-4446-924c-c250c63b2bc5
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9b7742c8-bef2-4446-924c-c250c63b2bc5 HTTP/1.1" 200
+2025-10-14 15:31:17,977 INFO assets.registry Deleted asset 628ee478-701c-431e-bae0-c914afc225fe
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/628ee478-701c-431e-bae0-c914afc225fe HTTP/1.1" 200
+2025-10-14 15:31:17,981 INFO assets.registry Deleted asset d2e8a1fe-029b-4f06-8694-1352fbab5507
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d2e8a1fe-029b-4f06-8694-1352fbab5507 HTTP/1.1" 200
+2025-10-14 15:31:17,984 INFO assets.registry Deleted asset 1cf5f849-7e01-446c-acf3-c010a68fda0d
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1cf5f849-7e01-446c-acf3-c010a68fda0d HTTP/1.1" 200
+2025-10-14 15:31:17,988 INFO assets.registry Deleted asset b1285223-4500-4ce5-b0b0-de42c0dca068
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b1285223-4500-4ce5-b0b0-de42c0dca068 HTTP/1.1" 200
+2025-10-14 15:31:17,992 INFO assets.registry Deleted asset 9f4a7cf8-12ba-4af4-a7e6-658841ada98c
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9f4a7cf8-12ba-4af4-a7e6-658841ada98c HTTP/1.1" 200
+2025-10-14 15:31:17,996 INFO assets.registry Deleted asset e71362e0-9174-4463-811f-6b5cd222a7c4
+[32mINFO[0m:     2025-10-14 15:31:17 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e71362e0-9174-4463-811f-6b5cd222a7c4 HTTP/1.1" 200
+2025-10-14 15:31:18,001 INFO assets.registry Deleted asset 0c30b8b2-cccb-477e-b5dc-17d7f6a7b688
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0c30b8b2-cccb-477e-b5dc-17d7f6a7b688 HTTP/1.1" 200
+2025-10-14 15:31:18,005 INFO assets.registry Deleted asset be02ace8-327d-4349-b8b3-5d7cefa492a8
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/be02ace8-327d-4349-b8b3-5d7cefa492a8 HTTP/1.1" 200
+2025-10-14 15:31:18,009 INFO assets.registry Deleted asset b474c1df-f869-4eeb-9c53-713f78f21761
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b474c1df-f869-4eeb-9c53-713f78f21761 HTTP/1.1" 200
+2025-10-14 15:31:18,014 INFO assets.registry Deleted asset 8088e81b-ebfa-4246-9114-db30d3fe2935
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8088e81b-ebfa-4246-9114-db30d3fe2935 HTTP/1.1" 200
+2025-10-14 15:31:18,018 INFO assets.registry Deleted asset 30e7d38d-3064-4038-b92e-72398c1546b7
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/30e7d38d-3064-4038-b92e-72398c1546b7 HTTP/1.1" 200
+2025-10-14 15:31:18,022 INFO assets.registry Deleted asset c210fcea-3275-4dd7-b3fa-e2c32228b260
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c210fcea-3275-4dd7-b3fa-e2c32228b260 HTTP/1.1" 200
+2025-10-14 15:31:18,026 INFO assets.registry Deleted asset 94fdbd98-3b22-4942-963e-b031bd2dc4a6
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/94fdbd98-3b22-4942-963e-b031bd2dc4a6 HTTP/1.1" 200
+2025-10-14 15:31:18,030 INFO assets.registry Deleted asset a5eaa1fb-7beb-4b4f-9a1e-07912fb20b0a
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a5eaa1fb-7beb-4b4f-9a1e-07912fb20b0a HTTP/1.1" 200
+2025-10-14 15:31:18,033 INFO assets.registry Deleted asset da7441a0-df2b-4428-b9f7-4e771bdccd80
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/da7441a0-df2b-4428-b9f7-4e771bdccd80 HTTP/1.1" 200
+2025-10-14 15:31:18,037 INFO assets.registry Deleted asset b50a1203-7541-49ed-bb23-3fd0fe797c0b
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b50a1203-7541-49ed-bb23-3fd0fe797c0b HTTP/1.1" 200
+2025-10-14 15:31:18,041 INFO assets.registry Deleted asset ebf7a467-d8c5-40e9-a234-9071b124d3cd
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ebf7a467-d8c5-40e9-a234-9071b124d3cd HTTP/1.1" 200
+2025-10-14 15:31:18,044 INFO assets.registry Deleted asset 12ac6ed6-0f00-4f92-89e6-974f8606d6a9
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/12ac6ed6-0f00-4f92-89e6-974f8606d6a9 HTTP/1.1" 200
+2025-10-14 15:31:18,047 INFO assets.registry Deleted asset 30267d23-6f29-43d0-98f6-fba323ffb0a4
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/30267d23-6f29-43d0-98f6-fba323ffb0a4 HTTP/1.1" 200
+2025-10-14 15:31:18,051 INFO assets.registry Deleted asset 6fba15e8-823a-4fb2-be98-bf70caa6b759
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/6fba15e8-823a-4fb2-be98-bf70caa6b759 HTTP/1.1" 200
+2025-10-14 15:31:18,055 INFO assets.registry Deleted asset d3a33368-105a-48fa-900f-a2e60ed91f01
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d3a33368-105a-48fa-900f-a2e60ed91f01 HTTP/1.1" 200
+2025-10-14 15:31:18,059 INFO assets.registry Deleted asset 111c4058-fd37-4999-bf93-afa25243a745
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/111c4058-fd37-4999-bf93-afa25243a745 HTTP/1.1" 200
+2025-10-14 15:31:18,064 INFO assets.registry Deleted asset 8534e894-3d3b-445e-9fd6-205017b45b22
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8534e894-3d3b-445e-9fd6-205017b45b22 HTTP/1.1" 200
+2025-10-14 15:31:18,068 INFO assets.registry Deleted asset dd761820-dc75-4be0-ba4f-a02fe1d5189f
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/dd761820-dc75-4be0-ba4f-a02fe1d5189f HTTP/1.1" 200
+2025-10-14 15:31:18,073 INFO assets.registry Deleted asset 223cc64b-d4b2-4ec7-8f62-c7c580c1a4f2
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/223cc64b-d4b2-4ec7-8f62-c7c580c1a4f2 HTTP/1.1" 200
+2025-10-14 15:31:18,076 INFO assets.registry Deleted asset 0f3fa9f4-4de0-4a93-bb6e-e5bfc8f684ac
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0f3fa9f4-4de0-4a93-bb6e-e5bfc8f684ac HTTP/1.1" 200
+2025-10-14 15:31:18,080 INFO assets.registry Deleted asset aad4b41d-6bd2-4808-9212-5dfda74f5c49
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/aad4b41d-6bd2-4808-9212-5dfda74f5c49 HTTP/1.1" 200
+2025-10-14 15:31:18,084 INFO assets.registry Deleted asset 1feef043-1319-4593-8737-0dcb8c2e13e3
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1feef043-1319-4593-8737-0dcb8c2e13e3 HTTP/1.1" 200
+2025-10-14 15:31:18,087 INFO assets.registry Deleted asset 22fe9a5b-04a6-4807-b7a9-27ae8a9e6dba
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/22fe9a5b-04a6-4807-b7a9-27ae8a9e6dba HTTP/1.1" 200
+2025-10-14 15:31:18,091 INFO assets.registry Deleted asset 7fc0db94-c9fa-4cd2-8756-fa489d5fa109
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/7fc0db94-c9fa-4cd2-8756-fa489d5fa109 HTTP/1.1" 200
+2025-10-14 15:31:18,094 INFO assets.registry Deleted asset e2bcd31f-c740-49ee-bf82-754c10a83b96
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e2bcd31f-c740-49ee-bf82-754c10a83b96 HTTP/1.1" 200
+2025-10-14 15:31:18,097 INFO assets.registry Deleted asset 9fe657dc-52ce-40a4-921c-8e8565566722
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9fe657dc-52ce-40a4-921c-8e8565566722 HTTP/1.1" 200
+2025-10-14 15:31:18,100 INFO assets.registry Deleted asset f1f880f9-3d73-481d-b315-0610bb5904ad
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f1f880f9-3d73-481d-b315-0610bb5904ad HTTP/1.1" 200
+2025-10-14 15:31:18,104 INFO assets.registry Deleted asset 41ddcb09-57e4-4dd0-9247-c4c88973251c
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/41ddcb09-57e4-4dd0-9247-c4c88973251c HTTP/1.1" 200
+2025-10-14 15:31:18,108 INFO assets.registry Deleted asset 68c8ae85-a4ae-4811-9dcd-b4592bc6dad4
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/68c8ae85-a4ae-4811-9dcd-b4592bc6dad4 HTTP/1.1" 200
+2025-10-14 15:31:18,111 INFO assets.registry Deleted asset 744f6e06-96aa-4a7b-88ac-58649b51a310
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/744f6e06-96aa-4a7b-88ac-58649b51a310 HTTP/1.1" 200
+2025-10-14 15:31:18,114 INFO assets.registry Deleted asset bbd77a9f-c906-4e18-9bf1-2342640f53d2
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/bbd77a9f-c906-4e18-9bf1-2342640f53d2 HTTP/1.1" 200
+2025-10-14 15:31:18,117 INFO assets.registry Deleted asset 87dfa23a-0e36-4190-8802-33bf001a776e
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/87dfa23a-0e36-4190-8802-33bf001a776e HTTP/1.1" 200
+2025-10-14 15:31:18,119 INFO assets.registry Deleted asset e5dd5406-72db-4b16-8478-00ef89140dae
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e5dd5406-72db-4b16-8478-00ef89140dae HTTP/1.1" 200
+2025-10-14 15:31:18,123 INFO assets.registry Deleted asset 5cf75dff-0689-43df-b4ac-2f79d92dd800
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5cf75dff-0689-43df-b4ac-2f79d92dd800 HTTP/1.1" 200
+2025-10-14 15:31:18,125 INFO assets.registry Deleted asset 673df2c0-e3ab-43b2-9e64-c4f9d07bdb12
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/673df2c0-e3ab-43b2-9e64-c4f9d07bdb12 HTTP/1.1" 200
+2025-10-14 15:31:18,128 INFO assets.registry Deleted asset cb76d1dd-cf28-4e79-b014-10c5f39c9958
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/cb76d1dd-cf28-4e79-b014-10c5f39c9958 HTTP/1.1" 200
+2025-10-14 15:31:18,131 INFO assets.registry Deleted asset 2461f8a7-a359-434a-b7ef-6970eab99ee8
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/2461f8a7-a359-434a-b7ef-6970eab99ee8 HTTP/1.1" 200
+2025-10-14 15:31:18,134 INFO assets.registry Deleted asset d4542ed5-e9f0-4186-a99f-b2d978c70291
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d4542ed5-e9f0-4186-a99f-b2d978c70291 HTTP/1.1" 200
+2025-10-14 15:31:18,137 INFO assets.registry Deleted asset f3721b04-f22b-4fd8-a656-e8864c3798c1
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f3721b04-f22b-4fd8-a656-e8864c3798c1 HTTP/1.1" 200
+2025-10-14 15:31:18,140 INFO assets.registry Deleted asset 9c2ae325-a869-42cb-b4c8-cd72334309ce
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/9c2ae325-a869-42cb-b4c8-cd72334309ce HTTP/1.1" 200
+2025-10-14 15:31:18,143 INFO assets.registry Deleted asset 29a865cc-2b9f-4910-a557-d49d9ea26ef4
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/29a865cc-2b9f-4910-a557-d49d9ea26ef4 HTTP/1.1" 200
+2025-10-14 15:31:18,146 INFO assets.registry Deleted asset 0b3295e1-bc54-4098-954f-bc9fdd3d8965
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/0b3295e1-bc54-4098-954f-bc9fdd3d8965 HTTP/1.1" 200
+2025-10-14 15:31:18,148 INFO assets.registry Deleted asset 7bb0e5bb-3558-4e0a-a638-a55b8ed4597c
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/7bb0e5bb-3558-4e0a-a638-a55b8ed4597c HTTP/1.1" 200
+2025-10-14 15:31:18,152 INFO assets.registry Deleted asset 124f6fa9-ba42-4656-9922-957719885503
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/124f6fa9-ba42-4656-9922-957719885503 HTTP/1.1" 200
+2025-10-14 15:31:18,155 INFO assets.registry Deleted asset dae275b6-251e-47db-8b47-c8834537e0c2
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/dae275b6-251e-47db-8b47-c8834537e0c2 HTTP/1.1" 200
+2025-10-14 15:31:18,159 INFO assets.registry Deleted asset 6d316145-c6e0-40a8-9679-3f570ec05949
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/6d316145-c6e0-40a8-9679-3f570ec05949 HTTP/1.1" 200
+2025-10-14 15:31:18,162 INFO assets.registry Deleted asset a0195078-62cb-4a50-9e9d-26dad0375f96
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a0195078-62cb-4a50-9e9d-26dad0375f96 HTTP/1.1" 200
+2025-10-14 15:31:18,164 INFO assets.registry Deleted asset 91259ade-0f8b-4e44-849b-b51c43c2a76e
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/91259ade-0f8b-4e44-849b-b51c43c2a76e HTTP/1.1" 200
+2025-10-14 15:31:18,168 INFO assets.registry Deleted asset abb59b80-2327-4ab3-a5cf-06ab1f4d38cd
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/abb59b80-2327-4ab3-a5cf-06ab1f4d38cd HTTP/1.1" 200
+2025-10-14 15:31:18,172 INFO assets.registry Deleted asset fd80113e-e445-4fc7-bbf2-7eba3ec19a45
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/fd80113e-e445-4fc7-bbf2-7eba3ec19a45 HTTP/1.1" 200
+2025-10-14 15:31:18,174 INFO assets.registry Deleted asset e290660b-2b2d-489a-81f2-ef44deb8b8ad
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e290660b-2b2d-489a-81f2-ef44deb8b8ad HTTP/1.1" 200
+2025-10-14 15:31:18,177 INFO assets.registry Deleted asset cd65f8ef-b4ab-4649-9ac6-6a022b6e4ad1
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/cd65f8ef-b4ab-4649-9ac6-6a022b6e4ad1 HTTP/1.1" 200
+2025-10-14 15:31:18,180 INFO assets.registry Deleted asset 818f96d9-6182-4ffd-9177-8981cce6102f
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/818f96d9-6182-4ffd-9177-8981cce6102f HTTP/1.1" 200
+2025-10-14 15:31:18,183 INFO assets.registry Deleted asset ebc956f5-0565-42c2-afd8-606a3e160bf2
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ebc956f5-0565-42c2-afd8-606a3e160bf2 HTTP/1.1" 200
+2025-10-14 15:31:18,185 INFO assets.registry Deleted asset 41c8cfe2-53db-4c9e-afe0-0b4ad99abc8f
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/41c8cfe2-53db-4c9e-afe0-0b4ad99abc8f HTTP/1.1" 200
+2025-10-14 15:31:18,188 INFO assets.registry Deleted asset c8bd9758-9cfd-4cf4-910e-95893d123731
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c8bd9758-9cfd-4cf4-910e-95893d123731 HTTP/1.1" 200
+2025-10-14 15:31:18,191 INFO assets.registry Deleted asset 67006c90-a113-4833-9b6e-e0a93ef90f91
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/67006c90-a113-4833-9b6e-e0a93ef90f91 HTTP/1.1" 200
+2025-10-14 15:31:18,194 INFO assets.registry Deleted asset 2b1c8085-5d7e-418a-bde3-b621b9428542
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/2b1c8085-5d7e-418a-bde3-b621b9428542 HTTP/1.1" 200
+2025-10-14 15:31:18,197 INFO assets.registry Deleted asset ea12e0df-0412-4d0d-a623-2b469214527f
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/ea12e0df-0412-4d0d-a623-2b469214527f HTTP/1.1" 200
+2025-10-14 15:31:18,199 INFO assets.registry Deleted asset 1354df80-d2bb-41c2-ae53-30d131a172d1
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1354df80-d2bb-41c2-ae53-30d131a172d1 HTTP/1.1" 200
+2025-10-14 15:31:18,202 INFO assets.registry Deleted asset 2e21c856-e933-43dc-b734-67396d376d78
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/2e21c856-e933-43dc-b734-67396d376d78 HTTP/1.1" 200
+2025-10-14 15:31:18,205 INFO assets.registry Deleted asset da2d06f6-92d8-445e-a746-39d6770f7341
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/da2d06f6-92d8-445e-a746-39d6770f7341 HTTP/1.1" 200
+2025-10-14 15:31:18,208 INFO assets.registry Deleted asset 5c80a5d6-5dce-4d83-a9b6-53848e98daf9
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5c80a5d6-5dce-4d83-a9b6-53848e98daf9 HTTP/1.1" 200
+2025-10-14 15:31:18,211 INFO assets.registry Deleted asset a27e3fe0-4baf-4911-bc03-55cdd1e36a54
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a27e3fe0-4baf-4911-bc03-55cdd1e36a54 HTTP/1.1" 200
+2025-10-14 15:31:18,214 INFO assets.registry Deleted asset 7e017af2-f2a9-45bc-a6d3-997c7831f34b
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/7e017af2-f2a9-45bc-a6d3-997c7831f34b HTTP/1.1" 200
+2025-10-14 15:31:18,217 INFO assets.registry Deleted asset cb243069-a8fd-439f-b1ea-8c467cf42a76
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/cb243069-a8fd-439f-b1ea-8c467cf42a76 HTTP/1.1" 200
+2025-10-14 15:31:18,221 INFO assets.registry Deleted asset 613abaf9-296a-4d9e-a1f4-13c240a2d72c
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/613abaf9-296a-4d9e-a1f4-13c240a2d72c HTTP/1.1" 200
+2025-10-14 15:31:18,229 INFO assets.registry Added asset 180356cf-0024-4bb2-8e9a-5588b5bde78b: image_0.png (label: class_a)
+2025-10-14 15:31:18,233 INFO assets.registry Added asset f3b99b56-5368-4708-ad5e-ea085721c56f: image_0.png (label: class_b)
+2025-10-14 15:31:18,233 INFO upload.service Ingested 2 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:31:18,236 INFO augment.router Running SMOTE on 2 images
+2025-10-14 15:31:18,237 INFO augment.service No resampling needed
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 400
+2025-10-14 15:31:18,241 INFO assets.registry Deleted asset 180356cf-0024-4bb2-8e9a-5588b5bde78b
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/180356cf-0024-4bb2-8e9a-5588b5bde78b HTTP/1.1" 200
+2025-10-14 15:31:18,243 INFO assets.registry Deleted asset f3b99b56-5368-4708-ad5e-ea085721c56f
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f3b99b56-5368-4708-ad5e-ea085721c56f HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "POST /params HTTP/1.1" 200
+2025-10-14 15:31:18,292 INFO assets.registry Added asset 74c8465c-49d6-4716-9586-7c3629124686: image_0.png (label: cat)
+2025-10-14 15:31:18,295 INFO assets.registry Added asset 3cd36947-3cfc-4989-9a03-c5dad910c1fa: image_1.png (label: cat)
+2025-10-14 15:31:18,298 INFO assets.registry Added asset dc67a0e5-5369-4aa1-a06c-d023fc5f3619: image_2.png (label: cat)
+2025-10-14 15:31:18,302 INFO assets.registry Added asset 7f782897-40c4-4709-aed9-924de0c35bad: image_3.png (label: cat)
+2025-10-14 15:31:18,305 INFO assets.registry Added asset 781a6d5f-4e1b-4b96-8db1-73575cc8a694: image_4.png (label: cat)
+2025-10-14 15:31:18,308 INFO assets.registry Added asset 23587f48-0fa0-42fe-bf46-06233f9bc31e: image_5.png (label: cat)
+2025-10-14 15:31:18,311 INFO assets.registry Added asset d4cfec4b-430f-4da3-bb75-bdae4a6e05d1: image_6.png (label: cat)
+2025-10-14 15:31:18,314 INFO assets.registry Added asset 1b99af2e-18c6-47e8-b669-ddc4277a458a: image_7.png (label: cat)
+2025-10-14 15:31:18,317 INFO assets.registry Added asset 539e5287-bb9e-4f5a-ad10-deae012300d4: image_8.png (label: cat)
+2025-10-14 15:31:18,320 INFO assets.registry Added asset 8d1dc5a5-0c4e-4815-b835-4f7eec780b1c: image_9.png (label: cat)
+2025-10-14 15:31:18,323 INFO assets.registry Added asset cbb5ba89-8f8b-4ce1-b05e-87b53f7252aa: image_10.png (label: cat)
+2025-10-14 15:31:18,326 INFO assets.registry Added asset a60a3f49-3fb4-4645-ab13-feef251c9f9c: image_11.png (label: cat)
+2025-10-14 15:31:18,329 INFO assets.registry Added asset 4772bf19-2c39-4ac4-8163-50e1560e5177: image_12.png (label: cat)
+2025-10-14 15:31:18,332 INFO assets.registry Added asset 4c0acd2d-d805-48e4-9f49-7bb45fa32a6a: image_13.png (label: cat)
+2025-10-14 15:31:18,335 INFO assets.registry Added asset 8edb0ebe-1c7b-4428-958e-20e87e0460d4: image_14.png (label: cat)
+2025-10-14 15:31:18,339 INFO assets.registry Added asset a9a4f800-0fe8-463e-8f11-a9a28b727b36: image_15.png (label: cat)
+2025-10-14 15:31:18,343 INFO assets.registry Added asset 96aa7f04-47ec-455e-a2e6-9edb6664f63b: image_16.png (label: cat)
+2025-10-14 15:31:18,346 INFO assets.registry Added asset 40d72ecb-b3ba-42fd-909d-31b08678c7e4: image_17.png (label: cat)
+2025-10-14 15:31:18,349 INFO assets.registry Added asset b48624e6-aca9-4dad-bdf7-c0f1d195bc83: image_18.png (label: cat)
+2025-10-14 15:31:18,352 INFO assets.registry Added asset e0d4a7a7-52e1-4e52-9a79-a889d80385a7: image_19.png (label: cat)
+2025-10-14 15:31:18,355 INFO assets.registry Added asset 260ba92b-8afc-4423-a99a-72118e5f17c7: image_20.png (label: cat)
+2025-10-14 15:31:18,358 INFO assets.registry Added asset 7eaab625-27f3-4c0a-bbd7-de1e0dc4c886: image_21.png (label: cat)
+2025-10-14 15:31:18,361 INFO assets.registry Added asset f7021436-319a-4a3b-9c7d-355b913ff8e0: image_22.png (label: cat)
+2025-10-14 15:31:18,365 INFO assets.registry Added asset 5fbab801-db6b-4056-a182-bb5920ef85f6: image_23.png (label: cat)
+2025-10-14 15:31:18,368 INFO assets.registry Added asset 55690882-5d51-4981-9707-8eb934c72002: image_24.png (label: cat)
+2025-10-14 15:31:18,371 INFO assets.registry Added asset f2f6caf8-546d-4045-8d6e-d0ee19bc73f9: image_25.png (label: cat)
+2025-10-14 15:31:18,374 INFO assets.registry Added asset 5513ef02-ba5c-4424-ab01-bd6b73903a92: image_26.png (label: cat)
+2025-10-14 15:31:18,377 INFO assets.registry Added asset 42ddb745-dcb8-4638-a647-65a87421d85e: image_27.png (label: cat)
+2025-10-14 15:31:18,380 INFO assets.registry Added asset 63419dd0-19ff-42e9-833e-656385b0e5db: image_28.png (label: cat)
+2025-10-14 15:31:18,384 INFO assets.registry Added asset da6adfe0-402d-4887-9733-cc1c74379d6d: image_29.png (label: cat)
+2025-10-14 15:31:18,387 INFO assets.registry Added asset c7e857d7-b5cd-44d3-a529-260e7a6bed87: image_0.png (label: dog)
+2025-10-14 15:31:18,390 INFO assets.registry Added asset bc8c293c-caa2-475e-a8f6-0b0880413906: image_1.png (label: dog)
+2025-10-14 15:31:18,393 INFO assets.registry Added asset 97455bf7-d739-4ad6-8edb-600d69d24ae4: image_2.png (label: dog)
+2025-10-14 15:31:18,397 INFO assets.registry Added asset 4a88a966-7c6a-4e06-a945-47c08ff35623: image_3.png (label: dog)
+2025-10-14 15:31:18,400 INFO assets.registry Added asset e830e871-df37-4577-8db5-e5b5d49b080e: image_4.png (label: dog)
+2025-10-14 15:31:18,403 INFO assets.registry Added asset 1eeb13e2-23ff-4233-8cd9-32236c059344: image_5.png (label: dog)
+2025-10-14 15:31:18,407 INFO assets.registry Added asset 86b70c1f-5409-4606-b282-390c9b23c1b5: image_6.png (label: dog)
+2025-10-14 15:31:18,410 INFO assets.registry Added asset 36bf6bee-bdec-4f90-84f7-af77aa678317: image_7.png (label: dog)
+2025-10-14 15:31:18,410 INFO upload.service Ingested 38 images from ZIP with class labels
+[32mINFO[0m:     2025-10-14 15:31:18 uvicorn.access 127.0.0.1:57720 - "POST /upload/zip HTTP/1.1" 200
+2025-10-14 15:31:18,423 INFO augment.router Running SMOTE on 38 images
+2025-10-14 15:31:21,283 INFO augment.service Generated 16 synthetic images
+2025-10-14 15:31:21,287 INFO augment.router Computing quality metrics for 16 synthetic images
+2025-10-14 15:31:21,544 INFO augment.router Creating ZIP file with augmented dataset
+2025-10-14 15:31:21,545 INFO augment.router Added metadata JSON to ZIP
+2025-10-14 15:31:21,545 INFO augment.router Adding original images to ZIP
+2025-10-14 15:31:21,547 INFO augment.router Adding synthetic images to ZIP
+2025-10-14 15:31:21,548 INFO augment.router ZIP file created successfully, size: 14364 bytes
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "POST /augment/smote HTTP/1.1" 200
+2025-10-14 15:31:21,553 INFO assets.registry Deleted asset 74c8465c-49d6-4716-9586-7c3629124686
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/74c8465c-49d6-4716-9586-7c3629124686 HTTP/1.1" 200
+2025-10-14 15:31:21,557 INFO assets.registry Deleted asset 3cd36947-3cfc-4989-9a03-c5dad910c1fa
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/3cd36947-3cfc-4989-9a03-c5dad910c1fa HTTP/1.1" 200
+2025-10-14 15:31:21,561 INFO assets.registry Deleted asset dc67a0e5-5369-4aa1-a06c-d023fc5f3619
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/dc67a0e5-5369-4aa1-a06c-d023fc5f3619 HTTP/1.1" 200
+2025-10-14 15:31:21,564 INFO assets.registry Deleted asset 7f782897-40c4-4709-aed9-924de0c35bad
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/7f782897-40c4-4709-aed9-924de0c35bad HTTP/1.1" 200
+2025-10-14 15:31:21,569 INFO assets.registry Deleted asset 781a6d5f-4e1b-4b96-8db1-73575cc8a694
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/781a6d5f-4e1b-4b96-8db1-73575cc8a694 HTTP/1.1" 200
+2025-10-14 15:31:21,572 INFO assets.registry Deleted asset 23587f48-0fa0-42fe-bf46-06233f9bc31e
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/23587f48-0fa0-42fe-bf46-06233f9bc31e HTTP/1.1" 200
+2025-10-14 15:31:21,575 INFO assets.registry Deleted asset d4cfec4b-430f-4da3-bb75-bdae4a6e05d1
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/d4cfec4b-430f-4da3-bb75-bdae4a6e05d1 HTTP/1.1" 200
+2025-10-14 15:31:21,579 INFO assets.registry Deleted asset 1b99af2e-18c6-47e8-b669-ddc4277a458a
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1b99af2e-18c6-47e8-b669-ddc4277a458a HTTP/1.1" 200
+2025-10-14 15:31:21,582 INFO assets.registry Deleted asset 539e5287-bb9e-4f5a-ad10-deae012300d4
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/539e5287-bb9e-4f5a-ad10-deae012300d4 HTTP/1.1" 200
+2025-10-14 15:31:21,585 INFO assets.registry Deleted asset 8d1dc5a5-0c4e-4815-b835-4f7eec780b1c
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8d1dc5a5-0c4e-4815-b835-4f7eec780b1c HTTP/1.1" 200
+2025-10-14 15:31:21,588 INFO assets.registry Deleted asset cbb5ba89-8f8b-4ce1-b05e-87b53f7252aa
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/cbb5ba89-8f8b-4ce1-b05e-87b53f7252aa HTTP/1.1" 200
+2025-10-14 15:31:21,592 INFO assets.registry Deleted asset a60a3f49-3fb4-4645-ab13-feef251c9f9c
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a60a3f49-3fb4-4645-ab13-feef251c9f9c HTTP/1.1" 200
+2025-10-14 15:31:21,595 INFO assets.registry Deleted asset 4772bf19-2c39-4ac4-8163-50e1560e5177
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4772bf19-2c39-4ac4-8163-50e1560e5177 HTTP/1.1" 200
+2025-10-14 15:31:21,598 INFO assets.registry Deleted asset 4c0acd2d-d805-48e4-9f49-7bb45fa32a6a
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4c0acd2d-d805-48e4-9f49-7bb45fa32a6a HTTP/1.1" 200
+2025-10-14 15:31:21,601 INFO assets.registry Deleted asset 8edb0ebe-1c7b-4428-958e-20e87e0460d4
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/8edb0ebe-1c7b-4428-958e-20e87e0460d4 HTTP/1.1" 200
+2025-10-14 15:31:21,604 INFO assets.registry Deleted asset a9a4f800-0fe8-463e-8f11-a9a28b727b36
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/a9a4f800-0fe8-463e-8f11-a9a28b727b36 HTTP/1.1" 200
+2025-10-14 15:31:21,607 INFO assets.registry Deleted asset 96aa7f04-47ec-455e-a2e6-9edb6664f63b
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/96aa7f04-47ec-455e-a2e6-9edb6664f63b HTTP/1.1" 200
+2025-10-14 15:31:21,610 INFO assets.registry Deleted asset 40d72ecb-b3ba-42fd-909d-31b08678c7e4
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/40d72ecb-b3ba-42fd-909d-31b08678c7e4 HTTP/1.1" 200
+2025-10-14 15:31:21,613 INFO assets.registry Deleted asset b48624e6-aca9-4dad-bdf7-c0f1d195bc83
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/b48624e6-aca9-4dad-bdf7-c0f1d195bc83 HTTP/1.1" 200
+2025-10-14 15:31:21,616 INFO assets.registry Deleted asset e0d4a7a7-52e1-4e52-9a79-a889d80385a7
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e0d4a7a7-52e1-4e52-9a79-a889d80385a7 HTTP/1.1" 200
+2025-10-14 15:31:21,618 INFO assets.registry Deleted asset 260ba92b-8afc-4423-a99a-72118e5f17c7
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/260ba92b-8afc-4423-a99a-72118e5f17c7 HTTP/1.1" 200
+2025-10-14 15:31:21,621 INFO assets.registry Deleted asset 7eaab625-27f3-4c0a-bbd7-de1e0dc4c886
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/7eaab625-27f3-4c0a-bbd7-de1e0dc4c886 HTTP/1.1" 200
+2025-10-14 15:31:21,624 INFO assets.registry Deleted asset f7021436-319a-4a3b-9c7d-355b913ff8e0
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f7021436-319a-4a3b-9c7d-355b913ff8e0 HTTP/1.1" 200
+2025-10-14 15:31:21,626 INFO assets.registry Deleted asset 5fbab801-db6b-4056-a182-bb5920ef85f6
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5fbab801-db6b-4056-a182-bb5920ef85f6 HTTP/1.1" 200
+2025-10-14 15:31:21,629 INFO assets.registry Deleted asset 55690882-5d51-4981-9707-8eb934c72002
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/55690882-5d51-4981-9707-8eb934c72002 HTTP/1.1" 200
+2025-10-14 15:31:21,632 INFO assets.registry Deleted asset f2f6caf8-546d-4045-8d6e-d0ee19bc73f9
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/f2f6caf8-546d-4045-8d6e-d0ee19bc73f9 HTTP/1.1" 200
+2025-10-14 15:31:21,634 INFO assets.registry Deleted asset 5513ef02-ba5c-4424-ab01-bd6b73903a92
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/5513ef02-ba5c-4424-ab01-bd6b73903a92 HTTP/1.1" 200
+2025-10-14 15:31:21,637 INFO assets.registry Deleted asset 42ddb745-dcb8-4638-a647-65a87421d85e
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/42ddb745-dcb8-4638-a647-65a87421d85e HTTP/1.1" 200
+2025-10-14 15:31:21,639 INFO assets.registry Deleted asset 63419dd0-19ff-42e9-833e-656385b0e5db
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/63419dd0-19ff-42e9-833e-656385b0e5db HTTP/1.1" 200
+2025-10-14 15:31:21,642 INFO assets.registry Deleted asset da6adfe0-402d-4887-9733-cc1c74379d6d
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/da6adfe0-402d-4887-9733-cc1c74379d6d HTTP/1.1" 200
+2025-10-14 15:31:21,645 INFO assets.registry Deleted asset c7e857d7-b5cd-44d3-a529-260e7a6bed87
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/c7e857d7-b5cd-44d3-a529-260e7a6bed87 HTTP/1.1" 200
+2025-10-14 15:31:21,647 INFO assets.registry Deleted asset bc8c293c-caa2-475e-a8f6-0b0880413906
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/bc8c293c-caa2-475e-a8f6-0b0880413906 HTTP/1.1" 200
+2025-10-14 15:31:21,651 INFO assets.registry Deleted asset 97455bf7-d739-4ad6-8edb-600d69d24ae4
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/97455bf7-d739-4ad6-8edb-600d69d24ae4 HTTP/1.1" 200
+2025-10-14 15:31:21,654 INFO assets.registry Deleted asset 4a88a966-7c6a-4e06-a945-47c08ff35623
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/4a88a966-7c6a-4e06-a945-47c08ff35623 HTTP/1.1" 200
+2025-10-14 15:31:21,658 INFO assets.registry Deleted asset e830e871-df37-4577-8db5-e5b5d49b080e
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/e830e871-df37-4577-8db5-e5b5d49b080e HTTP/1.1" 200
+2025-10-14 15:31:21,661 INFO assets.registry Deleted asset 1eeb13e2-23ff-4233-8cd9-32236c059344
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/1eeb13e2-23ff-4233-8cd9-32236c059344 HTTP/1.1" 200
+2025-10-14 15:31:21,664 INFO assets.registry Deleted asset 86b70c1f-5409-4606-b282-390c9b23c1b5
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/86b70c1f-5409-4606-b282-390c9b23c1b5 HTTP/1.1" 200
+2025-10-14 15:31:21,666 INFO assets.registry Deleted asset 36bf6bee-bdec-4f90-84f7-af77aa678317
+[32mINFO[0m:     2025-10-14 15:31:21 uvicorn.access 127.0.0.1:57720 - "DELETE /assets/36bf6bee-bdec-4f90-84f7-af77aa678317 HTTP/1.1" 200
+[32mINFO[0m:     2025-10-14 15:33:20 uvicorn.error Shutting down
+[32mINFO[0m:     2025-10-14 15:33:21 uvicorn.error Waiting for application shutdown.
+[32mINFO[0m:     2025-10-14 15:33:21 uvicorn.error Application shutdown complete.
+[32mINFO[0m:     2025-10-14 15:33:21 uvicorn.error Finished server process [[36m87397[0m]
