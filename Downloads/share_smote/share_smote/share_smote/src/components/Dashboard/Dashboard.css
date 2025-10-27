@@ -304,11 +304,14 @@
     font-size: 0.95rem;
     transition: all 0.2s;
     box-sizing: border-box;
+    background: white;
+    color: #1f2937;
   }
 
   .param-field input.input-error {
     border-color: #dc2626;
     background: #fef2f2;
+    color: #991b1b;
   }
   
   .param-field input:focus {
@@ -331,10 +334,15 @@
   .field-error {
     font-size: 0.75rem;
     color: #dc2626;
+    background: #fef2f2;
     margin: 0.25rem 0 0 0;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.375rem;
+    border: 1px solid #fecaca;
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    font-weight: 500;
   }
 
   .output-section {

@@ -1,5 +1,14 @@
-import PropTypes from "prop-types";
+import PropTypes from 'prop-types';
 
+/**
+ * SMOTE parameters input section component
+ * @param {Object} props - Component props
+ * @param {string} props.kNeighbour - K neighbour value
+ * @param {string} props.targetRatio - Target ratio value
+ * @param {string} props.randomState - Random state value
+ * @param {Object} props.fieldErrors - Validation errors
+ * @param {Function} props.handleInputChange - Input change handler
+ */
 function ParametersSection({
   kNeighbour,
   targetRatio,
@@ -7,8 +16,66 @@ function ParametersSection({
   fieldErrors,
   handleInputChange,
 }) {
+  /**
+   * Validates and sanitizes input for integer fields
+   * Only allows positive integers without leading zeros or invalid characters
+   * @param {string} value - The input value to validate
+   * @returns {boolean} Whether the input is valid
+   */
+  const isValidIntegerInput = (value) => {
+    if (value === '') return true;
+    // Allow only digits, no negative signs, decimals, or special characters
+    return /^\d+$/.test(value);
+  };
+
+  /**
+   * Validates and sanitizes input for decimal fields
+   * Only allows positive decimals in proper format
+   * @param {string} value - The input value to validate
+   * @returns {boolean} Whether the input is valid
+   */
+  const isValidDecimalInput = (value) => {
+    if (value === '') return true;
+    // Allow digits and at most one decimal point
+    return /^\d*\.?\d*$/.test(value);
+  };
+
+  /**
+   * Handles input for K Neighbour field with strict validation
+   * @param {Event} e - The input event
+   */
+  const handleKNeighbourInput = (e) => {
+    const value = e.target.value;
+    if (isValidIntegerInput(value)) {
+      handleInputChange('kNeighbour', value);
+    }
+  };
+
+  /**
+   * Handles input for Target Ratio field with strict validation
+   * @param {Event} e - The input event
+   */
+  const handleTargetRatioInput = (e) => {
+    const value = e.target.value;
+    if (isValidDecimalInput(value)) {
+      handleInputChange('targetRatio', value);
+    }
+  };
+
+  /**
+   * Handles input for Random State field with strict validation
+   * @param {Event} e - The input event
+   */
+  const handleRandomStateInput = (e) => {
+    const value = e.target.value;
+    if (isValidIntegerInput(value)) {
+      handleInputChange('randomState', value);
+    }
+  };
+
   return (
     <div className="parameters-grid">
+      {/* K Neighbour parameter input */}
       <div className="param-field">
         <label htmlFor="kNeighbour">
           K Neighbour
@@ -16,11 +83,11 @@ function ParametersSection({
         </label>
         <input
           id="kNeighbour"
-          type="number"
+          type="text"
           value={kNeighbour}
-          onChange={(e) => handleInputChange("kNeighbour", e.target.value)}
-          min="2"
-          className={fieldErrors.kNeighbour ? "input-error" : ""}
+          onChange={handleKNeighbourInput}
+          onBlur={(e) => handleInputChange('kNeighbour', e.target.value)}
+          className={fieldErrors.kNeighbour ? 'input-error' : ''}
           placeholder="Enter value (e.g., 5)"
           required
         />
@@ -33,6 +100,7 @@ function ParametersSection({
         )}
       </div>
 
+      {/* Target Ratio parameter input */}
       <div className="param-field">
         <label htmlFor="targetRatio">
           Target Ratio
@@ -40,13 +108,11 @@ function ParametersSection({
         </label>
         <input
           id="targetRatio"
-          type="number"
-          step="0.01"
+          type="text"
           value={targetRatio}
-          onChange={(e) => handleInputChange("targetRatio", e.target.value)}
-          min="0.0"
-          max="1.0"
-          className={fieldErrors.targetRatio ? "input-error" : ""}
+          onChange={handleTargetRatioInput}
+          onBlur={(e) => handleInputChange('targetRatio', e.target.value)}
+          className={fieldErrors.targetRatio ? 'input-error' : ''}
           placeholder="Enter value between 0.0 and 1.0"
           required
         />
@@ -57,6 +123,7 @@ function ParametersSection({
         )}
       </div>
 
+      {/* Random State parameter input */}
       <div className="param-field">
         <label htmlFor="randomState">
           Random State
@@ -64,18 +131,18 @@ function ParametersSection({
         </label>
         <input
           id="randomState"
-          type="number"
+          type="text"
           value={randomState}
-          onChange={(e) => handleInputChange("randomState", e.target.value)}
-          min="0"
-          className={fieldErrors.randomState ? "input-error" : ""}
+          onChange={handleRandomStateInput}
+          onBlur={(e) => handleInputChange('randomState', e.target.value)}
+          className={fieldErrors.randomState ? 'input-error' : ''}
           placeholder="Enter positive integer (e.g., 42)"
           required
         />
         {fieldErrors.randomState ? (
           <p className="field-error">! {fieldErrors.randomState}</p>
         ) : (
-          <p className="param-hint">Any positive integer value (required)</p>
+          <p className="param-hint">Must be greater than 0 (required)</p>
         )}
       </div>
     </div>

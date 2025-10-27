@@ -1,5 +1,15 @@
 import PropTypes from 'prop-types';
 
+/**
+ * File upload section component with drag and drop support
+ * @param {Object} props - Component props
+ * @param {File} props.zipFile - Currently selected file
+ * @param {boolean} props.dragActive - Whether drag is active
+ * @param {Object} props.fieldErrors - Validation errors
+ * @param {Function} props.handleDrag - Drag event handler
+ * @param {Function} props.handleDrop - Drop event handler
+ * @param {Function} props.handleFileChange - File change handler
+ */
 function FileUploadSection({ 
   zipFile, 
   dragActive, 
@@ -22,6 +32,9 @@ function FileUploadSection({
     display: 'none',
   };
 
+  /**
+   * Handle click on upload area to trigger file input
+   */
   const handleClick = () => {
     document.getElementById('fileInput').click();
   };
@@ -55,6 +68,7 @@ function FileUploadSection({
           style={hiddenInputStyles}
         />
         <div className="upload-content">
+          {/* Show file info if file is selected, otherwise show upload prompt */}
           {zipFile ? (
             <>
               <div className="file-icon">FILE</div>
@@ -77,6 +91,7 @@ function FileUploadSection({
           )}
         </div>
       </div>
+      {/* Display validation error if present */}
       {fieldErrors.zipFile && (
         <p className="field-error">! {fieldErrors.zipFile}</p>
       )}

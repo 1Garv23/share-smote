@@ -1,5 +1,11 @@
 import PropTypes from 'prop-types';
 
+/**
+ * Output information display section component
+ * Shows processing results after successful file processing
+ * @param {Object} props - Component props
+ * @param {Object} props.outputInfo - Output information object
+ */
 function OutputSection({ outputInfo }) {
   const placeholderTextStyles = { 
     fontSize: '0.75rem', 
@@ -10,6 +16,7 @@ function OutputSection({ outputInfo }) {
     <div className="output-section">
       {outputInfo ? (
         <div className="output-info">
+          {/* Display output file information */}
           <div className="output-item">
             <span className="output-label">Output File:</span>
             <span className="output-value">{outputInfo.filename}</span>

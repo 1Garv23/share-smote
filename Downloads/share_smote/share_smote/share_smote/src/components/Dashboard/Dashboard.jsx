@@ -8,10 +8,20 @@ import UserInfoCard from './UserInfoCard';
 import FileUploadSection from './FileUploadSection';
 import ParametersSection from './ParametersSection';
 import OutputSection from './OutputSection';
+import QualityMetricsSection from './QualityMetricsSection';
 
+/**
+ * Dashboard component for SMOTE image augmentation processing
+ * Handles file upload, parameter configuration, and displays processing results
+ * @param {Object} props - Component props
+ * @param {string} props.token - JWT authentication token
+ * @param {Function} props.onLogout - Logout callback function
+ */
 function Dashboard({ token, onLogout }) {
+  // Fetch user data with authentication
   const { user, loading } = useUserData(token, onLogout);
   
+  // File upload state and handlers
   const {
     zipFile,
     dragActive,
@@ -23,19 +33,27 @@ function Dashboard({ token, onLogout }) {
     clearFile,
   } = useFileUpload();
 
+  // File processing state and handlers
   const {
     submitting,
     error,
     success,
     outputInfo,
+    metricsData,
     validateField,
     processFile,
   } = useFileProcessing(token);
 
+  // SMOTE parameters state
   const [kNeighbour, setKNeighbour] = useState('');
   const [targetRatio, setTargetRatio] = useState('');
   const [randomState, setRandomState] = useState('');
 
+  /**
+   * Handle input field changes with validation
+   * @param {string} name - Input field name
+   * @param {string} value - Input field value
+   */
   const handleInputChange = (name, value) => {
     const setters = {
       kNeighbour: setKNeighbour,
@@ -48,6 +66,7 @@ function Dashboard({ token, onLogout }) {
       setter(value);
     }
 
+    // Validate field and update error state
     const errors = validateField(name, value, zipFile);
     setFieldErrors((prev) => ({ 
       ...prev, 
@@ -56,11 +75,20 @@ function Dashboard({ token, onLogout }) {
     }));
   };
 
+  /**
+   * Handle form submission for file processing
+   * @param {Event} e - Form submit event
+   */
   const handleSubmit = async (e) => {
     e.preventDefault();
     const result = await processFile(zipFile, kNeighbour, targetRatio, randomState);
     
+    // Clear form on success
     if (result.success) {
+      const fileInput = document.getElementById('fileInput');
+      if (fileInput) {
+        fileInput.value = '';
+      }
       clearFile();
       setKNeighbour('');
       setTargetRatio('');
@@ -71,6 +99,7 @@ function Dashboard({ token, onLogout }) {
     }
   };
 
+  // Show loading state while fetching user data
   if (loading) {
     return (
       <div className="dashboard-loading">
@@ -83,6 +112,7 @@ function Dashboard({ token, onLogout }) {
   return (
     <div className="dashboard-container">
       <div className="dashboard-content">
+        {/* Header with logout button */}
         <div className="dashboard-header">
           <div className="header-text">
             <h1>Dashboard</h1>
@@ -93,11 +123,14 @@ function Dashboard({ token, onLogout }) {
           </button>
         </div>
 
+        {/* User information card */}
         <UserInfoCard user={user} />
 
+        {/* File processing form */}
         <div className="processing-card">
           <h2 className="card-title">File Processing</h2>
 
+          {/* Error message display */}
           {error && (
             <div className="message message-error">
               <span className="message-icon">!</span>
@@ -105,6 +138,7 @@ function Dashboard({ token, onLogout }) {
             </div>
           )}
           
+          {/* Success message display */}
           {success && (
             <div className="message message-success">
               <span className="message-icon">✓</span>
@@ -114,6 +148,7 @@ function Dashboard({ token, onLogout }) {
 
           <form onSubmit={handleSubmit}>
             <div className="form-layout">
+              {/* Left section: Input parameters */}
               <div className="left-section">
                 <h3 className="section-title">Input Parameters</h3>
 
@@ -134,6 +169,7 @@ function Dashboard({ token, onLogout }) {
                   handleInputChange={handleInputChange}
                 />
 
+                {/* Submit button with loading state */}
                 <button
                   type="submit"
                   disabled={submitting}
@@ -150,6 +186,7 @@ function Dashboard({ token, onLogout }) {
                 </button>
               </div>
 
+              {/* Right section: Output information */}
               <div className="right-section">
                 <h3 className="section-title">Output Information</h3>
                 <OutputSection outputInfo={outputInfo} />
@@ -157,6 +194,9 @@ function Dashboard({ token, onLogout }) {
             </div>
           </form>
         </div>
+
+        {/* Quality metrics section (shown after processing) */}
+        <QualityMetricsSection metricsData={metricsData} />
       </div>
     </div>
   );

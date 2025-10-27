@@ -2,15 +2,16 @@ import { useState } from 'react';
 import PropTypes from 'prop-types';
 import './Login.css';
 
+/**
+ * Login component for user authentication
+ * @param {Object} props - Component props
+ * @param {Function} props.setToken - Function to set authentication token
+ * @param {Function} props.setView - Function to switch between login/register views
+ */
 function Login({ setToken, setView }) {
-  const [loginMode, setLoginMode] = useState('password'); // 'password' or 'otp'
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [otp, setOtp] = useState('');
-  const [otpSent, setOtpSent] = useState(false);
   const [error, setError] = useState('');
-  const [loading, setLoading] = useState(false);
-  const [successMessage, setSuccessMessage] = useState('');
 
   const inputStyles = {
     width: '100%',
@@ -42,18 +43,16 @@ function Login({ setToken, setView }) {
     color: 'red',
   };
 
-  const successStyles = {
-    color: '#28a745',
-    fontSize: '14px',
-    marginTop: '10px',
-  };
-
-  const handlePasswordLogin = async (e) => {
+  /**
+   * Handle login form submission
+   * @param {Event} e - Form submit event
+   */
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/login', {
+      const response = await fetch('/api/auth/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -64,6 +63,7 @@ function Login({ setToken, setView }) {
       const data = await response.json();
 
       if (response.ok) {
+        // Store token and update state
         localStorage.setItem('token', data.token);
         setToken(data.token);
       } else {
@@ -74,89 +74,16 @@ function Login({ setToken, setView }) {
     }
   };
 
-  const handleSendOTP = async (e) => {
-    e.preventDefault();
-    setError('');
-    setSuccessMessage('');
-    setLoading(true);
-
-    try {
-      const response = await fetch('http://localhost:5000/api/auth/otp/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        setOtpSent(true);
-        setSuccessMessage('OTP sent successfully! Check your email.');
-      } else {
-        setError(data.message || 'Failed to send OTP');
-      }
-    } catch (err) {
-      setError('Connection error. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const handleVerifyOTP = async (e) => {
-    e.preventDefault();
-    setError('');
-    setLoading(true);
-
-    try {
-      const response = await fetch('http://localhost:5000/api/auth/otp/verify', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ email, otp }),
-      });
-
-      const data = await response.json();
-
-      if (response.ok) {
-        localStorage.setItem('token', data.token);
-        setToken(data.token);
-      } else {
-        setError(data.message || 'Invalid OTP');
-      }
-    } catch (err) {
-      setError('Connection error. Please try again.');
-    } finally {
-      setLoading(false);
-    }
-  };
-
+  /**
+   * Switch to register view
+   */
   const handleRegisterClick = () => {
     setView('register');
   };
 
-  const toggleLoginMode = () => {
-    setLoginMode(loginMode === 'password' ? 'otp' : 'password');
-    setEmail('');
-    setPassword('');
-    setOtp('');
-    setOtpSent(false);
-    setError('');
-    setSuccessMessage('');
-  };
-
-  const handleResendOTP = () => {
-    setOtpSent(false);
-    setOtp('');
-    setError('');
-    setSuccessMessage('');
-  };
-
   return (
     <div className="login-container">
-      {/* Title Page Section */}
+      {/* Project title section */}
       <div className="title-page">
         <h1 className="course-code">SOFTWARE ENGINEERING (IT303)</h1>
         <h2 className="course-project">
@@ -171,129 +98,36 @@ function Login({ setToken, setView }) {
         <p className="student-name">H S Jayanth (231IT024)</p>
       </div>
 
-      {/* Login Form Section */}
+      {/* Login form section */}
       <div className="login-form-container">
-        <h2>{loginMode === 'password' ? 'Login' : 'Login with OTP'}</h2>
-        
-        {loginMode === 'password' ? (
-          /* Password Login Form */
-          <form onSubmit={handlePasswordLogin}>
-            <div style={{ marginBottom: '10px' }}>
-              <input
-                type="email"
-                placeholder="Email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                style={inputStyles}
-              />
-            </div>
-            <div style={{ marginBottom: '10px' }}>
-              <input
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                style={inputStyles}
-              />
-            </div>
-            {error && <p style={errorStyles}>{error}</p>}
-            <button type="submit" style={buttonStyles}>
-              Login
-            </button>
-          </form>
-        ) : (
-          /* OTP Login Form */
-          !otpSent ? (
-            <form onSubmit={handleSendOTP}>
-              <div style={{ marginBottom: '15px' }}>
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  required
-                  style={inputStyles}
-                  disabled={loading}
-                />
-              </div>
-              
-              {error && <p style={errorStyles}>{error}</p>}
-              {successMessage && <p style={successStyles}>{successMessage}</p>}
-              
-              <button 
-                type="submit" 
-                style={buttonStyles}
-                disabled={loading}
-              >
-                {loading ? 'Sending...' : 'Send OTP'}
-              </button>
-            </form>
-          ) : (
-            <form onSubmit={handleVerifyOTP}>
-              <div style={{ marginBottom: '15px' }}>
-                <input
-                  type="email"
-                  placeholder="Email"
-                  value={email}
-                  disabled
-                  style={{ ...inputStyles, backgroundColor: '#e9ecef' }}
-                />
-              </div>
-              
-              <div style={{ marginBottom: '15px' }}>
-                <input
-                  type="text"
-                  placeholder="Enter 6-digit OTP"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value.replace(/\D/g, '').slice(0, 6))}
-                  required
-                  maxLength="6"
-                  style={inputStyles}
-                  disabled={loading}
-                  className="otp-input"
-                />
-              </div>
-              
-              {error && <p style={errorStyles}>{error}</p>}
-              
-              <button 
-                type="submit" 
-                style={buttonStyles}
-                disabled={loading || otp.length !== 6}
-                className={loading || otp.length !== 6 ? 'button-disabled' : ''}
-              >
-                {loading ? 'Verifying...' : 'Verify OTP'}
-              </button>
-              
-              <p className="resend-otp-text">
-                Didn&apos;t receive the code?{' '}
-                <button
-                  type="button"
-                  onClick={handleResendOTP}
-                  style={linkButtonStyles}
-                  disabled={loading}
-                >
-                  Resend OTP
-                </button>
-              </p>
-            </form>
-          )
-        )}
-
-        {/* Toggle between login modes */}
-        <p className="toggle-login-mode">
-          <button
-            type="button"
-            onClick={toggleLoginMode}
-            className="toggle-mode-button"
-          >
-            {loginMode === 'password' ? '🔐 Login with OTP instead' : '🔑 Login with Password instead'}
+        <h2>Login</h2>
+        <form onSubmit={handleSubmit}>
+          <div style={{ marginBottom: '10px' }}>
+            <input
+              type="email"
+              placeholder="Email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              style={inputStyles}
+            />
+          </div>
+          <div style={{ marginBottom: '10px' }}>
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              style={inputStyles}
+            />
+          </div>
+          {/* Display error message if present */}
+          {error && <p style={errorStyles}>{error}</p>}
+          <button type="submit" style={buttonStyles}>
+            Login
           </button>
-        </p>
-
-        {/* Register link */}
+        </form>
         <p>
           Don&apos;t have an account?
           {' '}
