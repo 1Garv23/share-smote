@@ -12,7 +12,9 @@
     "bcryptjs": "^2.4.3",
     "jsonwebtoken": "^9.0.2",
     "cors": "^2.8.5",
-    "dotenv": "^16.3.1"
+    "dotenv": "^16.3.1",
+    "nodemailer": "^6.9.0",
+    "googleapis": "^118.0.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.1"
